@@ -5,16 +5,16 @@ using UnityEngine;
 public abstract class enemyParent : MonoBehaviour
 {
  
-	private string name;
-	private int health;
+	private string enemyName;
+	private int health = 0;
 	
 	public enemyParent(string name, int health){
-	    this.name = name;
+	    this.enemyName = name;
         this.health = health;
 	}
     
     public string getName(){
-        return name;
+        return enemyName;
     }
     
     public int getHealth(){
@@ -22,7 +22,7 @@ public abstract class enemyParent : MonoBehaviour
     }
     
     public void setName(string name){
-        this.name = name;
+        this.enemyName = name;
     }
     
     public void setHealth(int hp){
