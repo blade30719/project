@@ -336,10 +336,10 @@ TextureImporter:
       name: summon_01_10
       rect:
         serializedVersion: 2
-        x: 694
+        x: 680
         y: 139
-        width: 152
-        height: 140
+        width: 166
+        height: 142
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
