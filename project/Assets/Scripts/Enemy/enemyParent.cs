@@ -15,27 +15,27 @@ public abstract class enemyParent : MonoBehaviour
 	}
     
     //子類別呼叫取得敵人名
-    public string getName(){
+    protected string getName(){
         return enemyName;
     }
     
     //子類別呼叫取得血量
-    public int getHealth(){
+    protected int getHealth(){
         return health;
     }
     
     //設定敵人名
-    public void setName(string name){
+    protected void setName(string name){
         this.enemyName = name;
     }
     
     //設定血量
-    public void setHealth(int hp){
+    protected void setHealth(int hp){
         this.health = hp;
     }
 	
-	abstract public bool fight();    //抽象function，判斷是否進入fight狀態
-	abstract public bool move();     //抽象function，判斷是否進入move狀態
-	abstract public bool death();    //抽象function，判斷是否死亡
+	abstract protected bool fight();    //抽象function，判斷是否進入fight狀態
+	abstract protected bool move();     //抽象function，判斷是否進入move狀態
+	abstract protected bool death();    //抽象function，判斷是否死亡
   
 }
