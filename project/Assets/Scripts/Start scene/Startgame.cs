@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//using SceneManager;
 public class Startgame : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -20,6 +20,6 @@ public class Startgame : MonoBehaviour
     public void nextScene()//切換場景
     {
        // Debug.Log("next");
-       // SceneManager.LoadScene("  ");//切換到指定場景 還沒填
+      // SceneManager.LoadScene(1);//切換到指定場景
     }
 }
