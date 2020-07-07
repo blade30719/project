@@ -10,6 +10,8 @@ public class btnSummon_01 : MonoBehaviour
     private float timer = 0;  //計時器
     private Image filledImage;  //CD轉圈的圖示
     private bool isStartTime = false;  //決定是否開始計時
+    [SerializeField] private GameObject RiceBall;  //Cat Stick prefab
+    [SerializeField] private Transform Friendly_Position;  //出怪點
     // Start is called before the first frame update
     void Start()
     {
@@ -39,8 +41,8 @@ public class btnSummon_01 : MonoBehaviour
             isStartTime = true; //點擊按鈕後開始計時
             Debug.Log("按下召喚01");
                 //下面為召喚Summon_01的位置
-                //Vector3 pos = new Vector3(,,); //宣告位置pos，Random.Range
-                //Instantiate(,,);
+                Vector3 pos = new Vector3(8,-7,-1); //宣告位置pos，Random.Range
+                Instantiate(RiceBall,Friendly_Position.position,Friendly_Position.rotation);
         }
     }
 
