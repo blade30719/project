@@ -26,6 +26,7 @@ public class RiceBall : friendlyParent
 
     private Rigidbody2D rb;
     private Animator ani;
+    int speed;
 
     // Start is called before the first frame update
     void Start()
@@ -33,29 +34,43 @@ public class RiceBall : friendlyParent
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
         ani.SetBool("walk",true);
+        speed = 2;
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = Vector2.left * 2;  
+        Debug.Log(speed);
+        rb.velocity = Vector2.left * speed;  
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "enemy")
+        Debug.Log("speed == 0");
+        if (collision.tag == "enemy" || collision.gameObject.name == "left")
         {
+            Debug.Log("speed == 0");
+            speed = 0;
             ani.SetBool("walk", false);
             ani.SetBool("attack",true);
+            StartCoroutine(waitTime(1));
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "enemy")
+        Debug.Log("speed != 0");
+        if (collision.gameObject.tag == "enemy" || collision.gameObject.name == "left")
         {
+            Debug.Log("speed != 0");
+            speed = 2;
             ani.SetBool("attack", false);
             ani.SetBool("walk", true);
         }
+    }
+
+    IEnumerator waitTime(int time)
+    {
+        yield return new WaitForSeconds(time);
     }
 }
