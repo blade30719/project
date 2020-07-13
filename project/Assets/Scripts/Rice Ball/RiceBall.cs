@@ -27,6 +27,7 @@ public class RiceBall : friendlyParent
     private Rigidbody2D rb;
     private Animator ani;
     int speed;
+    int hp;
 
     // Start is called before the first frame update
     void Start()
@@ -35,42 +36,52 @@ public class RiceBall : friendlyParent
         ani = GetComponent<Animator>();
         ani.SetBool("walk",true);
         speed = 2;
+        hp = 100;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(speed);
+        //Debug.Log(speed);
         rb.velocity = Vector2.left * speed;  
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("speed == 0");
+        //Debug.Log("speed == 0");
         if (collision.tag == "enemy" || collision.gameObject.name == "left")
         {
-            Debug.Log("speed == 0");
+            //Debug.Log("speed == 0");
             speed = 0;
             ani.SetBool("walk", false);
             ani.SetBool("attack",true);
-            StartCoroutine(waitTime(1));
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("speed != 0");
+        //Debug.Log("speed != 0");
         if (collision.gameObject.tag == "enemy" || collision.gameObject.name == "left")
         {
-            Debug.Log("speed != 0");
+            //Debug.Log("speed != 0");
             speed = 2;
             ani.SetBool("attack", false);
             ani.SetBool("walk", true);
         }
     }
 
-    IEnumerator waitTime(int time)
+
+    public void lossing_hp(int hurt)
     {
-        yield return new WaitForSeconds(time);
+        do
+        {
+            this.hp -= hurt;
+            if (hp == 0)
+            {
+                Debug.Log("die");
+                Destroy(this.gameObject);
+            }
+            Debug.Log(hp);
+        } while (false);
     }
 }
