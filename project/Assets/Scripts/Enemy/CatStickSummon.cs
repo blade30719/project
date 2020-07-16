@@ -5,7 +5,7 @@ using UnityEngine;
 public class CatStickSummon : MonoBehaviour
 {
     // Start is called before the first frame update
-    float summonTime = 2.0f;
+    float summonTime = 5.0f;
     [SerializeField] private GameObject catStick;
     [SerializeField] private Transform Enemy_Position;
     void Start()
