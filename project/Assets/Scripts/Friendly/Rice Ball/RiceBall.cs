@@ -28,6 +28,9 @@ public class RiceBall : friendlyParent
     private Animator ani;
     int speed;
     int hp;
+    string enemyName;
+    bool alive;
+    int enemyHeath;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +40,7 @@ public class RiceBall : friendlyParent
         ani.SetBool("walk",true);              //起始移動
         speed = 2;                             //移動速度
         hp = 100;                              //血量
+        alive = false;
     }
 
     // Update is called once per frame
@@ -63,6 +67,12 @@ public class RiceBall : friendlyParent
         if (collision.gameObject.tag == "enemy" || collision.gameObject.name == "left")
         {
             //Debug.Log("speed != 0");
+            if (alive == false)
+            {
+                alive = true;
+                enemyName = collision.gameObject.name;
+                enemyHeath = collision.GetComponent<CatStick>().getHealth();
+            }
             speed = 0;
         }
     }
@@ -76,13 +86,14 @@ public class RiceBall : friendlyParent
             speed = 2;
             ani.SetBool("attack", false);
             ani.SetBool("walk", true);
+            alive = false;
         }
     }
 
 
     public void lossing_hp(int hurt)                                              //扣血
     {
-        do
+        /*do
         {
             this.hp -= hurt;
             if (hp <= 0)
@@ -91,7 +102,8 @@ public class RiceBall : friendlyParent
                 Destroy(this.gameObject);
             }
             //Debug.Log(hp);
-        } while (false);
+        } while (false);*/
+        
     }
 
     public int GetHp()
