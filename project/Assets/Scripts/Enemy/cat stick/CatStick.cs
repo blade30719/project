@@ -96,4 +96,13 @@ public class CatStick : enemyParent
         throw new System.NotImplementedException();
     }
 
+    public int getHealth()
+    {
+        return hp;
+    }
+
+    public void setHealth(int hp)
+    {
+        this.hp = hp;
+    }
 }
