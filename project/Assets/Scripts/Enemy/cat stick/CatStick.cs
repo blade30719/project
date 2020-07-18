@@ -11,20 +11,21 @@ public class CatStick : enemyParent
     int speed ; //移動速度
     int hp;
     
-    public CatStick(string name , int heath) : base("catStick" , 2)
+    public CatStick(string name , int health) : base("catStick" , 100)
     {
-        setName("catStick");
-        setHealth(2);
+        setName(name);
+        setHealth(health);
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        CatStick catStick = new CatStick("catStick", 100);
         cs = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
         ani.SetBool("move",true);
         speed = 2;
-        hp = 100;
+        hp = catStick.getHealth();
     }
 
     // Update is called once per frame
@@ -39,7 +40,6 @@ public class CatStick : enemyParent
     {
         if (collision.tag == "friendly" || collision.gameObject.name == "right")      //遇到敵人停下攻擊
         {
-            //Debug.Log("speed == 0");
             speed = 0;
             ani.SetBool("move", false);
             ani.SetBool("attack", true);
@@ -50,10 +50,7 @@ public class CatStick : enemyParent
     {
         if (collision.tag == "friendly" || collision.gameObject.name == "right")
         {
-            //Debug.Log("speed != 0");
             speed = 0;
-            //int heath = collision.GetComponent<RiceBall>().GetHp();
-            //Debug.Log(heath);
         }
     }
 
@@ -70,16 +67,7 @@ public class CatStick : enemyParent
 
     public void lossing_hp_catStick(int hurt)                                              //扣血
     {
-        do
-        {
-            this.hp -= hurt;
-            if (hp <= 0)
-            {
-                Debug.Log("die");
-                Destroy(this.gameObject);
-            }
-            //Debug.Log(hp);
-        } while (false);
+
     }
     protected override bool death()
     {
@@ -96,12 +84,12 @@ public class CatStick : enemyParent
         throw new System.NotImplementedException();
     }
 
-    public int getHealth()
+    public int getHp()
     {
         return hp;
     }
 
-    public void setHealth(int hp)
+    public void setHp(int hp)
     {
         this.hp = hp;
     }
