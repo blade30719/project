@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class RiceBall : friendlyParent
 {
-    public RiceBall(string name , int heath) : base("Rice_ball" , 10)
+    public RiceBall(string name , int health) : base("riceBall" , 10)
     {
-
+        setName(name);
+        setHealth(health);
     }
 
     public override bool death()
@@ -28,34 +29,32 @@ public class RiceBall : friendlyParent
     private Animator ani;
     int speed;
     int hp;
-    string enemyName;
+    GameObject enemyName;
     bool alive;
-    int enemyHeath;
+    int enemyHealth;
 
     // Start is called before the first frame update
     void Start()
     {
+        RiceBall riceball = new RiceBall("riceBall", 100);
         rb = GetComponent<Rigidbody2D>();      //取得角色身上component
         ani = GetComponent<Animator>();
         ani.SetBool("walk",true);              //起始移動
         speed = 2;                             //移動速度
-        hp = 100;                              //血量
+        hp = riceball.getHealth();
         alive = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(speed);
         rb.velocity = Vector2.left * speed;    //移動
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("speed == 0");
         if (collision.tag == "enemy" || collision.gameObject.name == "left")      //遇到敵人停下攻擊
         {
-            //Debug.Log("speed == 0");
             speed = 0;
             ani.SetBool("walk", false);
             ani.SetBool("attack",true);
@@ -66,12 +65,17 @@ public class RiceBall : friendlyParent
     {
         if (collision.gameObject.tag == "enemy" || collision.gameObject.name == "left")
         {
-            //Debug.Log("speed != 0");
             if (alive == false)
             {
+                Debug.Log("get name");
                 alive = true;
-                enemyName = collision.gameObject.name;
-                enemyHeath = collision.GetComponent<CatStick>().getHealth();
+                enemyName = collision.gameObject;
+                enemyHealth = collision.GetComponent<CatStick>().getHp();
+            }
+            if(alive == true)
+            {
+                enemyName.GetComponent<CatStick>().setHp(enemyHealth);
+                Debug.Log(collision.GetComponent<CatStick>().getHp());
             }
             speed = 0;
         }
@@ -82,7 +86,6 @@ public class RiceBall : friendlyParent
         //Debug.Log("speed != 0");
         if (collision.gameObject.tag == "enemy" || collision.gameObject.name == "left")
         {
-            //Debug.Log("speed != 0");
             speed = 2;
             ani.SetBool("attack", false);
             ani.SetBool("walk", true);
@@ -93,27 +96,23 @@ public class RiceBall : friendlyParent
 
     public void lossing_hp(int hurt)                                              //扣血
     {
-        /*do
+        enemyHealth -= 10;
+
+        if (enemyHealth <= 0)
         {
-            this.hp -= hurt;
-            if (hp <= 0)
-            {
-                Debug.Log("die");
-                Destroy(this.gameObject);
-            }
-            //Debug.Log(hp);
-        } while (false);*/
-        
+            Debug.Log("die");
+            Destroy(enemyName);
+        }
     }
 
-    public int GetHp()
-    {
-        return hp;
-    }
-
-    public void SetHp(int hp)
+    public void setHp(int hp)
     {
         this.hp = hp;
         Debug.Log(this.hp);
+    }
+
+    public int getHp()
+    {
+        return hp;
     }
 }
