@@ -72,12 +72,6 @@ public class RiceBall : friendlyParent
             {
                 alive = true;                                                   
                 enemyName = collision.gameObject;                               //取得一個攻擊對象
-                enemyHealth = collision.GetComponent<CatStick>().getHp();       //取得對方血量
-            }
-            else
-            {
-                enemyName.GetComponent<CatStick>().setHp(enemyHealth);          //攻擊後回傳對方剩餘血量
-                //Debug.Log(collision.GetComponent<CatStick>().getHp());
             }
             speed = 0;
         }
@@ -98,12 +92,18 @@ public class RiceBall : friendlyParent
 
     public void lossing_hp()                                  //扣血
     {
-        enemyHealth -= str;
+        if (alive == false) {
+            enemyHealth = enemyName.GetComponent<CatStick>().getHp();
 
-        if (enemyHealth <= 0)                                 //血量低於0死亡
-        {
-            Debug.Log("die");
-            Destroy(enemyName);                               //摧毀物件
+            enemyHealth -= str;
+
+            if (enemyHealth <= 0)                                 //血量低於0死亡
+            {
+                Debug.Log("die");
+                Destroy(enemyName);                               //摧毀物件
+            }
+
+            enemyName.GetComponent<CatStick>().setHp(enemyHealth);
         }
     }
 
