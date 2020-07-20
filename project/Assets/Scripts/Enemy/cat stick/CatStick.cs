@@ -10,22 +10,29 @@ public class CatStick : enemyParent
     private Animator ani;
     int speed ; //移動速度
     int hp;
-    
-    public CatStick(string name , int health) : base("catStick" , 100)
+    int str;
+    GameObject enemyName;
+    bool alive;
+    int enemyHealth;
+
+    public CatStick(string name , int health, int attack) : base("catStick" , 100 , 8)
     {
         setName(name);
         setHealth(health);
+        setAttack(attack);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        CatStick catStick = new CatStick("catStick", 100);
+        CatStick catStick = new CatStick("catStick", 100 , 8);
         cs = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
         ani.SetBool("move",true);
         speed = 2;
-        hp = catStick.getHealth();
+        hp = catStick.getHealth();             //取得預設血量
+        str = catStick.getAttack();            //取得預設攻擊
+        alive = false;                         //判斷攻擊目標是否死亡
     }
 
     // Update is called once per frame
@@ -50,6 +57,11 @@ public class CatStick : enemyParent
     {
         if (collision.tag == "friendly" || collision.gameObject.name == "right")
         {
+            if (alive == false)                                                 //正在攻擊的敵人是否活著
+            {
+                alive = true;
+                enemyName = collision.gameObject;                               //取得一個攻擊對象
+            }
             speed = 0;
         }
     }
@@ -58,16 +70,30 @@ public class CatStick : enemyParent
     {
         if (collision.tag == "friendly" || collision.gameObject.name == "right")
         {
-            //Debug.Log("speed != 0");
             speed = 2;
-            ani.SetBool("attack", false);
-            ani.SetBool("move", true);
+            ani.SetBool("attack", false);                           //停止攻擊
+            ani.SetBool("walk", true);                              //恢復走路
+            alive = false;                                          //攻擊對象死亡
         }
     }
 
-    public void lossing_hp_catStick(int hurt)                                              //扣血
+    public void lossing_hp_catStick()                                              //扣血
     {
+        if (alive == true)
+        {
+            enemyHealth = enemyName.GetComponent<RiceBall>().getHp();     //取得目前血量
 
+            enemyHealth -= str;
+
+            if (enemyHealth <= 0)                                 //血量低於0死亡
+            {
+                Debug.Log("die");
+                Destroy(enemyName);                               //摧毀物件
+            }
+
+            enemyName.GetComponent<RiceBall>().setHp(enemyHealth);      //回傳血量
+            Debug.Log(enemyName.GetComponent<RiceBall>().getHp());
+        }
     }
     protected override bool death()
     {

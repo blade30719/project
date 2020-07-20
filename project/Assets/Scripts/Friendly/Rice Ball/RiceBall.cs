@@ -92,8 +92,8 @@ public class RiceBall : friendlyParent
 
     public void lossing_hp()                                  //扣血
     {
-        if (alive == false) {
-            enemyHealth = enemyName.GetComponent<CatStick>().getHp();
+        if (alive == true) {
+            enemyHealth = enemyName.GetComponent<CatStick>().getHp();     //取得目前血量
 
             enemyHealth -= str;
 
@@ -103,7 +103,8 @@ public class RiceBall : friendlyParent
                 Destroy(enemyName);                               //摧毀物件
             }
 
-            enemyName.GetComponent<CatStick>().setHp(enemyHealth);
+            enemyName.GetComponent<CatStick>().setHp(enemyHealth);      //回傳血量
+            //Debug.Log(enemyName.GetComponent<CatStick>().getHp());
         }
     }
 
