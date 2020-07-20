@@ -61,6 +61,8 @@ public class CatStick : enemyParent
             {
                 alive = true;
                 enemyName = collision.gameObject;                               //取得一個攻擊對象
+                ani.SetBool("attack", true);                           //停止攻擊
+                ani.SetBool("move", false);                              //恢復走路
             }
             speed = 0;
         }
@@ -70,10 +72,10 @@ public class CatStick : enemyParent
     {
         if (collision.tag == "friendly" || collision.gameObject.name == "right")
         {
+            alive = false;                                          //攻擊對象死亡
             speed = 2;
             ani.SetBool("attack", false);                           //停止攻擊
-            ani.SetBool("walk", true);                              //恢復走路
-            alive = false;                                          //攻擊對象死亡
+            ani.SetBool("move", true);                              //恢復走路    
         }
     }
 

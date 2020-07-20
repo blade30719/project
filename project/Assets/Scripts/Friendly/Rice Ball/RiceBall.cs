@@ -72,6 +72,8 @@ public class RiceBall : friendlyParent
             {
                 alive = true;                                                   
                 enemyName = collision.gameObject;                               //取得一個攻擊對象
+                ani.SetBool("attack", true);                           //停止攻擊
+                ani.SetBool("walk", false);                            //恢復走路
             }
             speed = 0;
         }
@@ -82,10 +84,10 @@ public class RiceBall : friendlyParent
         //Debug.Log("speed != 0");
         if (collision.gameObject.tag == "enemy" || collision.gameObject.name == "left")
         {
+            alive = false;                                          //攻擊對象死亡
             speed = 2;
             ani.SetBool("attack", false);                           //停止攻擊
-            ani.SetBool("walk", true);                              //恢復走路
-            alive = false;                                          //攻擊對象死亡
+            ani.SetBool("walk", true);                              //恢復走路   
         }
     }
 
