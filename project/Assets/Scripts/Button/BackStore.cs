@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class BackStore : MonoBehaviour
 {
-    public GameObject canvas;
     // Start is called before the first frame update
+    
+    public GameObject canvas;//要移除的canvas
     void Start()
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void ClickEvent()
-    {
+    
+    public void OnClick()
+    {	
         Destroy (canvas);//刪掉canvas
     }
 }
