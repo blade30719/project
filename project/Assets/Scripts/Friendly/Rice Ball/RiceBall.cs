@@ -56,7 +56,7 @@ public class RiceBall : friendlyParent
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "enemy" || collision.gameObject.name == "left")      //遇到敵人停下攻擊
+        if (collision.tag == "enemy" || collision.tag == "enemyHome")      //遇到敵人停下攻擊
         {
             speed = 0;
             ani.SetBool("walk", false);                   //遇到敵人停止走路動畫
@@ -66,14 +66,14 @@ public class RiceBall : friendlyParent
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "enemy" || collision.gameObject.name == "left")
+        if (collision.gameObject.tag == "enemy" || collision.tag == "enemyHome")
         {
             if (alive == false)                                                 //正在攻擊的敵人是否活著
             {
                 alive = true;                                                   
                 enemyName = collision.gameObject;                               //取得一個攻擊對象
-                ani.SetBool("attack", true);                           //停止攻擊
-                ani.SetBool("walk", false);                            //恢復走路
+                ani.SetBool("attack", true);                           //開始攻擊
+                ani.SetBool("walk", false);                            //停止走路
             }
             speed = 0;
         }
@@ -82,7 +82,7 @@ public class RiceBall : friendlyParent
     private void OnTriggerExit2D(Collider2D collision)                            //敵人消失繼續移動
     {
         //Debug.Log("speed != 0");
-        if (collision.gameObject.tag == "enemy" || collision.gameObject.name == "left")
+        if (collision.gameObject.tag == "enemy" || collision.tag == "enemyHome")
         {
             alive = false;                                          //攻擊對象死亡
             speed = 2;
@@ -95,18 +95,37 @@ public class RiceBall : friendlyParent
     public void lossing_hp()                                  //扣血
     {
         if (alive == true) {
-            enemyHealth = enemyName.GetComponent<CatStick>().getHp();     //取得目前血量
-
-            enemyHealth -= str;
-
-            if (enemyHealth <= 0)                                 //血量低於0死亡
+            if (enemyName.tag == "enemyHome")
             {
-                Debug.Log("die");
-                Destroy(enemyName);                               //摧毀物件
-            }
+                Debug.Log("手");
+                enemyHealth = enemyName.GetComponent<EnemyHome>().getHp();     //取得目前血量
 
-            enemyName.GetComponent<CatStick>().setHp(enemyHealth);      //回傳血量
-            //Debug.Log(enemyName.GetComponent<CatStick>().getHp());
+                enemyHealth -= str;
+
+                if (enemyHealth <= 0)                                 //血量低於0死亡
+                {
+                    Debug.Log("die");
+                    Destroy(enemyName);                               //摧毀物件
+                }
+
+                enemyName.GetComponent<EnemyHome>().setHp(enemyHealth);      //回傳血量
+                Debug.Log(enemyName.GetComponent<EnemyHome>().getHp());
+            }
+            else
+            {
+                enemyHealth = enemyName.GetComponent<CatStick>().getHp();     //取得目前血量
+
+                enemyHealth -= str;
+
+                if (enemyHealth <= 0)                                 //血量低於0死亡
+                {
+                    Debug.Log("die");
+                    Destroy(enemyName);                               //摧毀物件
+                }
+
+                enemyName.GetComponent<CatStick>().setHp(enemyHealth);      //回傳血量
+                Debug.Log(enemyName.GetComponent<CatStick>().getHp());
+            }
         }
     }
 
