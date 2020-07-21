@@ -1303,9 +1303,10 @@ GameObject:
   - component: {fileID: 1427510643}
   - component: {fileID: 1427510642}
   - component: {fileID: 1427510644}
-  m_Layer: 0
+  - component: {fileID: 1427510645}
+  m_Layer: 8
   m_Name: "\u624B"
-  m_TagString: Untagged
+  m_TagString: enemyHome
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1389,6 +1390,18 @@ MonoBehaviour:
   catStick: {fileID: 4441915167801139733, guid: bb45bfaaa9e40d34ead0e6f1d315dc3f,
     type: 3}
   Enemy_Position: {fileID: 732255252}
+--- !u!114 &1427510645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427510641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cdafd4072eeb254780c90be0a6c8303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1497748040
 PrefabInstance:
   m_ObjectHideFlags: 0
