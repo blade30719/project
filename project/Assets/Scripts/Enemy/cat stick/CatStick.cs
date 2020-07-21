@@ -61,8 +61,8 @@ public class CatStick : enemyParent
             {
                 alive = true;
                 enemyName = collision.gameObject;                               //取得一個攻擊對象
-                ani.SetBool("attack", true);                           //停止攻擊
-                ani.SetBool("move", false);                              //恢復走路
+                ani.SetBool("attack", true);                           //開始攻擊
+                ani.SetBool("move", false);                              //停止走路
             }
             speed = 0;
         }
@@ -94,7 +94,7 @@ public class CatStick : enemyParent
             }
 
             enemyName.GetComponent<RiceBall>().setHp(enemyHealth);      //回傳血量
-            Debug.Log(enemyName.GetComponent<RiceBall>().getHp());
+            //Debug.Log(enemyName.GetComponent<RiceBall>().getHp());
         }
     }
     protected override bool death()
