@@ -44,7 +44,4 @@ public abstract class friendlyParent : MonoBehaviour
         this.attack = str;
     }
 
-	abstract public bool fight();    //抽象function，判斷是否進入fight狀態
-	abstract public bool move();     //抽象function，判斷是否進入move狀態
-	abstract public bool death();    //抽象function，判斷是否死亡
 }

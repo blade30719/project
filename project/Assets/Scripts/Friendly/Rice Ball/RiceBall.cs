@@ -11,21 +11,6 @@ public class RiceBall : friendlyParent
         setAttack(attack);
     }
 
-    public override bool death()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public override bool fight()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public override bool move()
-    {
-        throw new System.NotImplementedException();
-    }
-
     private Rigidbody2D rb;
     private Animator ani;
     int speed;
