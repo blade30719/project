@@ -11,21 +11,6 @@ public class RiceBall : friendlyParent
         setAttack(attack);
     }
 
-    public override bool death()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public override bool fight()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public override bool move()
-    {
-        throw new System.NotImplementedException();
-    }
-
     private Rigidbody2D rb;
     private Animator ani;
     int speed;
@@ -101,12 +86,6 @@ public class RiceBall : friendlyParent
                 enemyHealth = enemyName.GetComponent<EnemyHome>().getHp();     //取得目前血量
 
                 enemyHealth -= str;
-
-                if (enemyHealth <= 0)                                 //血量低於0死亡
-                {
-                    Debug.Log("die");
-                    Destroy(enemyName);                               //摧毀物件
-                }
 
                 enemyName.GetComponent<EnemyHome>().setHp(enemyHealth);      //回傳血量
                 Debug.Log(enemyName.GetComponent<EnemyHome>().getHp());
