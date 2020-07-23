@@ -1305,6 +1305,7 @@ GameObject:
   - component: {fileID: 1427510644}
   - component: {fileID: 1427510645}
   - component: {fileID: 1427510646}
+  - component: {fileID: 1427510647}
   m_Layer: 8
   m_Name: "\u624B"
   m_TagString: enemyHome
@@ -1419,6 +1420,25 @@ CapsuleCollider2D:
   m_Offset: {x: -0.6213646, y: -0.645731}
   m_Size: {x: 2.3673935, y: 2.3673935}
   m_Direction: 0
+--- !u!95 &1427510647
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427510641}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b039735b44b35df4983cf220518bbb24, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1497748040
 PrefabInstance:
   m_ObjectHideFlags: 0

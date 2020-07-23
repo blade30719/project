@@ -87,12 +87,6 @@ public class RiceBall : friendlyParent
 
                 enemyHealth -= str;
 
-                if (enemyHealth <= 0)                                 //血量低於0死亡
-                {
-                    Debug.Log("die");
-                    Destroy(enemyName);                               //摧毀物件
-                }
-
                 enemyName.GetComponent<EnemyHome>().setHp(enemyHealth);      //回傳血量
                 Debug.Log(enemyName.GetComponent<EnemyHome>().getHp());
             }
