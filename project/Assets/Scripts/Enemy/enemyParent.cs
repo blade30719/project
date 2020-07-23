@@ -46,8 +46,5 @@ public abstract class enemyParent : MonoBehaviour
         this.health = hp;
     }
 	
-	abstract protected bool fight();    //抽象function，判斷是否進入fight狀態
-	abstract protected bool move();     //抽象function，判斷是否進入move狀態
-	abstract protected bool death();    //抽象function，判斷是否死亡
   
 }

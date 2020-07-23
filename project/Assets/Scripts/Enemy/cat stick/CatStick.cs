@@ -97,21 +97,6 @@ public class CatStick : enemyParent
             //Debug.Log(enemyName.GetComponent<RiceBall>().getHp());
         }
     }
-    protected override bool death()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    protected override bool fight()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    protected override bool move()
-    {
-        throw new System.NotImplementedException();
-    }
-
     public int getHp()
     {
         return hp;
