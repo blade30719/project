@@ -7,6 +7,7 @@ TagManager:
   - enemy
   - friendly
   - enemyHome
+  - store
   layers:
   - Default
   - TransparentFX
