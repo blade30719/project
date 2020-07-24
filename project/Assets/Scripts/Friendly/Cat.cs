@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Cat : MonoBehaviour
 {
+    public GameObject button;//要產生的button
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +24,11 @@ public class Cat : MonoBehaviour
             gameObject.transform.position += new Vector3(+0.1f,0, 0);
         }
 
+    
+    /*void OnTriggerEnter2D(Collider2D collision) {
+        if(collision.gameObject.name == "Catfood store"){
+            Instantiate (button, Vector2.zero, Quaternion.identity);//產生button
+        }   
+    }*/
     }
 }
