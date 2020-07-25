@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cat : MonoBehaviour
 {
-    public GameObject button;//要產生的button
+    //public GameObject button;//要產生的button
     // Start is called before the first frame update
     void Start()
     {
