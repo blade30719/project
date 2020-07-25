@@ -16,7 +16,8 @@ public class CatfoodStore : MonoBehaviour
     
     void OnTriggerExit2D(Collider2D col)
     {
-        Destroy(GameObject.Find("Goods(Clone)"));
+        Destroy(GameObject.Find("StoreButton(Clone)"));
+        
     }
     void OnTriggerStay2D(Collider2D col)
     {
