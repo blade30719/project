@@ -19,15 +19,15 @@ public class StartGame : MonoBehaviour
     
     public void startScene()//開始場景
     {
-        SceneManager.LoadScene(0);//編號0的場景
+        SceneManager.LoadScene("StartScene");
     }
     public void nextScene()//切換場景
     {
         if(SystemStorage.count==0){ //取得靜態的數值
-            SceneManager.LoadScene(2);//切換到編號1的場景
+            SceneManager.LoadScene("Home");
             SystemStorage.count++;
         }else{
-            SceneManager.LoadScene(1);//切換到編號2的場景
+            SceneManager.LoadScene("SampleScene");//切換到編號2的場景
         }
     }
     
