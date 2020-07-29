@@ -12,6 +12,7 @@ public class btnSummon_01 : MonoBehaviour
     private bool isStartTime = false;  //決定是否開始計時
     [SerializeField] private GameObject RiceBall;  //Cat Stick prefab
     [SerializeField] private Transform Friendly_Position;  //出怪點
+    [SerializeField] private GameObject camera;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class btnSummon_01 : MonoBehaviour
                 timer = 0; //重置計時器
                 isStartTime = false; //計時結束
             }
+            camera.GetComponent<TimePause>().setTimeScale(true);
         }
     }
 
