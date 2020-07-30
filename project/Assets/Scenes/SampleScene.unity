@@ -1320,6 +1320,7 @@ GameObject:
   - component: {fileID: 1427510645}
   - component: {fileID: 1427510646}
   - component: {fileID: 1427510647}
+  - component: {fileID: 1427510648}
   m_Layer: 8
   m_Name: "\u624B"
   m_TagString: enemyHome
@@ -1453,6 +1454,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1427510648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427510641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a2f44045122ccc4ea0d801b37ad983e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1497748040
 PrefabInstance:
   m_ObjectHideFlags: 0
