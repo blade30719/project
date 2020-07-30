@@ -5,7 +5,7 @@ using UnityEngine;
 public class TimePause : MonoBehaviour
 {
 
-    bool continueTime = false;
+    bool continueTime = false;                //宣告變數
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class TimePause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (continueTime == true)
+        if (continueTime == true)               //判斷暫停或繼續
         {
             //Debug.Log("go");
             timeStart();
@@ -28,17 +28,17 @@ public class TimePause : MonoBehaviour
         }
     }
 
-    public void timeStart()
+    public void timeStart()               //正常速度進行
     {
         Time.timeScale = 1;
     }
 
-    public void timeStop()
+    public void timeStop()               //暫停
     {
         Time.timeScale = 0;
     }
 
-    public void setTimeScale(bool input)
+    public void setTimeScale(bool input)             //暫停或開始的判斷
     {
         continueTime = input;
     }
