@@ -27,7 +27,7 @@ public class StartGame : MonoBehaviour
             SceneManager.LoadScene("Home");
             SystemStorage.count++;
         }else{
-            SceneManager.LoadScene("SampleScene");//切換到編號2的場景
+            SceneManager.LoadScene("SampleScene");
         }
     }
     
