@@ -32,7 +32,7 @@ public class btnSummon_01 : MonoBehaviour
                 timer = 0; //重置計時器
                 isStartTime = false; //計時結束
             }
-            camera.GetComponent<TimePause>().setTimeScale(true);
+            camera.GetComponent<TimePause>().setTimeScale(true);             //按下安鈕後取消暫停
         }
     }
 
