@@ -178,7 +178,10 @@ MonoBehaviour:
   RiceBall: {fileID: 8790516903517178669, guid: 2cbf06558ea302945b46894beeab8aa5,
     type: 3}
   Friendly_Position: {fileID: 841092356}
-  camera: {fileID: 963194225}
+  camera1: {fileID: 963194225}
+  "\u9ED1\u5E95": {fileID: 1291973417}
+  TMP: {fileID: 984203787}
+  "\u7BAD\u982D": {fileID: 628173956}
 --- !u!114 &15057712
 MonoBehaviour:
   m_ObjectHideFlags: 0
