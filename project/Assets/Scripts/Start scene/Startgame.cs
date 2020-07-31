@@ -24,10 +24,10 @@ public class StartGame : MonoBehaviour
     public void nextScene()//切換場景
     {
         if(SystemStorage.count==0){ //取得靜態的數值
-            SceneManager.LoadScene("Home");
+            SceneManager.LoadScene("SampleScene");
             SystemStorage.count++;
         }else{
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Home");
         }
     }
     

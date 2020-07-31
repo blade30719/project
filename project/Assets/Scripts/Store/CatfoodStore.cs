@@ -14,7 +14,7 @@ public class CatfoodStore : MonoBehaviour
         Instantiate (button, Vector2.zero, Quaternion.identity);//產生button
     }
     
-    void OnTriggerExit2D(Collider2D col)
+    void OnTriggerExit2D(Collider2D col)//離開銷毀按鈕
     {
         Destroy(GameObject.Find("StoreButton(Clone)"));
         
