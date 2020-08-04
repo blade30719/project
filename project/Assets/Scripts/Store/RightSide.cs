@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class GoStartscene : MonoBehaviour
+public class RightSide : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,16 +13,10 @@ public class GoStartscene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-           
-    }
-    public void startScene()//開始場景
-    {
-        SceneManager.LoadScene(2);//編號2的場景
-    }
-    public void nextScene()//切換場景
-    {
-        SceneManager.LoadScene(0);//切換到編號0的場景
         
     }
-    
+     void OnTriggerEnter2D(Collider2D col)//碰到跳到Home
+    {
+        SceneManager.LoadScene("Home");
+    }
 }

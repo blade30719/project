@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class LeftSide : MonoBehaviour
+public class GoStore : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,8 +15,8 @@ public class LeftSide : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter2D(Collider2D col)//碰到跳到Home
+    void OnTriggerEnter2D(Collider2D col)//碰到跳到Store
     {
-        SceneManager.LoadScene("Home");
+        SceneManager.LoadScene("Store");
     }
 }
