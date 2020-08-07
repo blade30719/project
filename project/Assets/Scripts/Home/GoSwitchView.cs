@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class GoStartscene : MonoBehaviour
+public class GoSwitchView : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,7 +13,7 @@ public class GoStartscene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-           
+        
     }
     public void startScene()//開始場景
     {
@@ -21,7 +21,6 @@ public class GoStartscene : MonoBehaviour
     }
     public void nextScene()//切換場景
     {
-        SceneManager.LoadScene("StartScene"); 
+        SceneManager.LoadScene("SwitchView"); 
     }
-    
 }
