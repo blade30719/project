@@ -28,4 +28,15 @@ public class JumpScene : MonoBehaviour
         int currentScene = SceneManager.GetActiveScene().buildIndex;          //取得現在場景編號
         SceneManager.LoadScene(currentScene - 1);
     }
+
+    public void restartScene()
+    {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;          //取得現在場景編號
+        SceneManager.LoadScene(currentScene);
+    }
+
+    public void backToHome()
+    {
+        SceneManager.LoadScene("Home");
+    }
 }

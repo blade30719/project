@@ -6,6 +6,10 @@ public class EnemyHome : MonoBehaviour
 {
     private int health; //易承的手手有10滴血
     Animator ani;
+    [SerializeField] private GameObject blackBG;
+    [SerializeField] private GameObject button;
+    [SerializeField] private GameObject camera;
+    [SerializeField] private GameObject end;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,5 +34,14 @@ public class EnemyHome : MonoBehaviour
     public void setHp(int health)
     {
         this.health = health;
+    }
+
+    public void ending()
+    {
+        camera.GetComponent<TimePause>().setTimeScale(false);
+        blackBG.SetActive(true);
+        button.SetActive(false);
+        end.SetActive(true);
+
     }
 }
