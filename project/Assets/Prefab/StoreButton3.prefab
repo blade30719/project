@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 81600332235224973}
   - component: {fileID: 8979663579111331728}
   m_Layer: 5
-  m_Name: StoreButton
+  m_Name: StoreButton3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,5 +241,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22db5e9813ad5142bdf4fc6a968e0a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 3760406807030057168, guid: e1037e4dd8d02cc46b186c40d1ac81ca,
+  canvasPrefab: {fileID: 3760406807030057168, guid: 5b720eead96e1f447b6d36698ab28e10,
     type: 3}
