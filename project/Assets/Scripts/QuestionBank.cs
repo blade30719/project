@@ -15,7 +15,7 @@ public class QuestionBank : MonoBehaviour
     void Start()
     {
 
-        int num = Random.Range(0,2);
+        int num = Random.Range(0,3);
         string[] question = new string[] { "1 + 1 = ?", "2 + 3 = ?" , "3 + 4 = ?" };
         string[] answer1 = new string[] { "2" , "1" , "8" };
         string[] answer2 = new string[] { "9" , "6" , "2" };
