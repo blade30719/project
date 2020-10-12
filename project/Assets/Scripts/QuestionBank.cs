@@ -7,6 +7,7 @@ public class QuestionBank : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    // 宣告gameobject
     [SerializeField] private TextMeshProUGUI title;
     [SerializeField] private TextMeshProUGUI btn1;
     [SerializeField] private TextMeshProUGUI btn2;
@@ -19,12 +20,15 @@ public class QuestionBank : MonoBehaviour
     private string Answer = "";
 
     public int num = 0;
+
+    //設定題目
     string[] question = new string[] { "1 + 1 = ?", "2 + 3 = ?", "3 + 4 = ?" };
     string[] answer1 = new string[] { "2", "1", "8" };
     string[] answer2 = new string[] { "9", "6", "2" };
     string[] answer3 = new string[] { "5", "5", "7" };
     string[] answer4 = new string[] { "7", "0", "6" };
     string[] answer5 = new string[] { "2", "5", "7" };
+
     /*
     string[] question = new string[1000];
     string[] answer1 = new string[1000];
@@ -36,8 +40,10 @@ public class QuestionBank : MonoBehaviour
 
     void Start()
     {
-        num = Random.Range(0, 3);
+        num = Random.Range(0, 3);           // 取得題號
         Debug.Log(num);
+
+        // 印出題目
         title.text = question[num];
         btn1.text = answer1[num];
         btn2.text = answer2[num];
@@ -49,7 +55,7 @@ public class QuestionBank : MonoBehaviour
     void Update()
     {
         //Debug.Log(Answer);
-        if (!Answer.Equals("")) {
+        if (!Answer.Equals("")) {                 // 判斷是否點擊
             if (Answer.Equals(answer5[num]))
             {
                 題目.SetActive(false);
@@ -63,6 +69,7 @@ public class QuestionBank : MonoBehaviour
         }
     }
 
+    // button點擊回傳值(用於判斷是否正確)
     public void button1() {
         Debug.Log(num);
         Answer = answer1[num].ToString();

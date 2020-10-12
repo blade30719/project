@@ -26,17 +26,17 @@ public class EnemyHome : MonoBehaviour
         }
     }
 
-    public int getHp()
+    public int getHp()         //回傳血量
     {
         return health;
     }
 
-    public void setHp(int health)
+    public void setHp(int health)          //設定血量
     {
         this.health = health;
     }
 
-    public void ending()
+    public void ending()                //結束畫面
     {
         camera.GetComponent<TimePause>().setTimeScale(false);
         blackBG.SetActive(true);
