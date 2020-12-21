@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/\u9EDE\u64CA.unity"
     guid: ae603b481bf043645b6591b9a73089ac
+  - enabled: 1
+    path: Assets/Scenes/Dictionary.unity
+    guid: 53b72e90458b0064a8f184f4a59ffea0
   m_configObjects: {}
