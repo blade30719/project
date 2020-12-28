@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+
 
 public static class SystemStorage { //靜態
 
-    public static int count = 0;
+    public static int count = 0;//場景
+    public static int coin = 0;//錢
 }
