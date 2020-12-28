@@ -66,7 +66,9 @@
     <Compile Include="Assets\Scripts\Camera.cs" />
     <Compile Include="Assets\Scripts\Click\Board.cs" />
     <Compile Include="Assets\Scripts\Click\CatHead.cs" />
+    <Compile Include="Assets\Scripts\Click\CoinNumber.cs" />
     <Compile Include="Assets\Scripts\Click\Money.cs" />
+    <Compile Include="Assets\Scripts\Dictionary\Go養成.cs" />
     <Compile Include="Assets\Scripts\Enemy\CatStickSummon.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHome.cs" />
     <Compile Include="Assets\Scripts\Enemy\cat stick\CatStick.cs" />
@@ -101,6 +103,9 @@
     <Compile Include="Assets\Scripts\SwitchView\GoStore.cs" />
     <Compile Include="Assets\Scripts\SystemStorage.cs" />
     <Compile Include="Assets\Scripts\TimePause.cs" />
+    <Compile Include="Assets\Scripts\養成\GoDictionary.cs" />
+    <Compile Include="Assets\Scripts\養成\JumpToClick.cs" />
+    <Compile Include="Assets\Scripts\養成\JumpToDic.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Hero\Ladymito\Free_cat\Animations\low_poly_cat_animation_list.txt" />
