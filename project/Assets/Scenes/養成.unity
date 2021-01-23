@@ -285,7 +285,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &52721304
 GameObject:
@@ -922,7 +922,7 @@ Transform:
   m_LocalScale: {x: 1.3430128, y: 1.5440784, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &569713638
 GameObject:
@@ -1186,7 +1186,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1210,7 +1210,7 @@ RectTransform:
   - {fileID: 1675254599}
   - {fileID: 426691277}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1841,6 +1841,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298752819}
   m_CullTransparentMesh: 0
+--- !u!1 &1345271795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1345271797}
+  - component: {fileID: 1345271796}
+  m_Layer: 0
+  m_Name: Main
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1345271796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345271795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb62c16c771277469ac3661ed3526e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasPrefab1: {fileID: 3760406807030057168, guid: 67f12632dc93d08418d5577688d36ecf,
+    type: 3}
+  canvasPrefab2: {fileID: 3760406807030057168, guid: f6bf6dfd87aebe244935969bf3713e8e,
+    type: 3}
+  canvasPrefab3: {fileID: 3760406807030057168, guid: f6687d80f02e2734bbd8282175deafad,
+    type: 3}
+  canvasPrefab4: {fileID: 3760406807030057168, guid: 3aee971050de2f740a1ecfbce4664729,
+    type: 3}
+--- !u!4 &1345271797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345271795}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1321.8094, y: 596.45685, z: -540.3588}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1410230778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,20 +2124,31 @@ MonoBehaviour:
   m_CaptionImage: {fileID: 0}
   m_ItemText: {fileID: 1274969114}
   m_ItemImage: {fileID: 1539930533}
-  m_Value: 0
+  m_Value: -1
   m_Options:
     m_Options:
-    - m_Text: A
+    - m_Text: furniture
       m_Image: {fileID: 21300000, guid: f89f849f3e24c4d4a9d63ccf99217c43, type: 3}
-    - m_Text: B
+    - m_Text: food
       m_Image: {fileID: 21300000, guid: da8f1652aaa672a4ea990e956adbba7c, type: 3}
-    - m_Text: C
+    - m_Text: 2
       m_Image: {fileID: 21300000, guid: 70e892e914c5d9649b0ea420e86c5a67, type: 3}
-    - m_Text: C
+    - m_Text: 3
       m_Image: {fileID: 21300000, guid: fe3f7bbff5adb5f4293e4eee092fb141, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1345271796}
+        m_MethodName: InputData
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1675254601
 MonoBehaviour:
@@ -2614,5 +2676,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

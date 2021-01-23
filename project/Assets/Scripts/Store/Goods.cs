@@ -13,7 +13,6 @@ public class Goods : MonoBehaviour
     
     public void OnClick()
     {
-		
         Instantiate (canvasPrefab, Vector2.zero, Quaternion.identity);//產生canvasPrefab
     }
 }
