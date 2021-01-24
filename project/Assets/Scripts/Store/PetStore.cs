@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CatfoodStore4 : MonoBehaviour
+public class PetStore : MonoBehaviour
 {
     public GameObject button;//要產生的button
     void Start()
@@ -16,7 +16,7 @@ public class CatfoodStore4 : MonoBehaviour
     
     void OnTriggerExit2D(Collider2D col)//離開銷毀按鈕
     {
-        Destroy(GameObject.Find("StoreButton4(Clone)"));
+        Destroy(GameObject.Find("PetStoreButton(Clone)"));
         
     }
 }
