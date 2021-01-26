@@ -103,6 +103,7 @@
     <Compile Include="Assets\Scripts\SwitchView\GoStore.cs" />
     <Compile Include="Assets\Scripts\SystemStorage.cs" />
     <Compile Include="Assets\Scripts\TimePause.cs" />
+    <Compile Include="Assets\Scripts\養成\DropdownlistController.cs" />
     <Compile Include="Assets\Scripts\養成\GoDictionary.cs" />
     <Compile Include="Assets\Scripts\養成\JumpToClick.cs" />
     <Compile Include="Assets\Scripts\養成\JumpToDic.cs" />

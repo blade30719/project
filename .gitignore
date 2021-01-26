@@ -1,0 +1,11 @@
+UnityLockfile
+Library
+obj
+.vs
+.vscode
+Packages
+Logs
+Temp
+project/Assembly-CSharp.csproj
+.gitattributes 
+project/project.sln
