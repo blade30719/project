@@ -2001,7 +2001,6 @@ GameObject:
   - component: {fileID: 1675254602}
   - component: {fileID: 1675254601}
   - component: {fileID: 1675254600}
-  - component: {fileID: 1675254603}
   - component: {fileID: 1675254604}
   m_Layer: 5
   m_Name: Dropdown
@@ -2089,9 +2088,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 164051d062041f44dba44c245daef7cb, type: 3}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1675254604}
+        m_MethodName: InputData
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2138,26 +2137,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675254598}
   m_CullTransparentMesh: 0
---- !u!114 &1675254603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675254598}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cb62c16c771277469ac3661ed3526e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasPrefab1: {fileID: 3760406807030057168, guid: 67f12632dc93d08418d5577688d36ecf,
-    type: 3}
-  canvasPrefab2: {fileID: 3760406807030057168, guid: f6bf6dfd87aebe244935969bf3713e8e,
-    type: 3}
-  canvasPrefab3: {fileID: 3760406807030057168, guid: f6687d80f02e2734bbd8282175deafad,
-    type: 3}
-  canvasPrefab4: {fileID: 3760406807030057168, guid: 3aee971050de2f740a1ecfbce4664729,
-    type: 3}
 --- !u!114 &1675254604
 MonoBehaviour:
   m_ObjectHideFlags: 0
