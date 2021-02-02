@@ -1186,7 +1186,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2001,6 +2001,7 @@ GameObject:
   - component: {fileID: 1675254602}
   - component: {fileID: 1675254601}
   - component: {fileID: 1675254600}
+  - component: {fileID: 1675254604}
   m_Layer: 5
   m_Name: Dropdown
   m_TagString: Untagged
@@ -2073,20 +2074,31 @@ MonoBehaviour:
   m_CaptionImage: {fileID: 0}
   m_ItemText: {fileID: 1274969114}
   m_ItemImage: {fileID: 1539930533}
-  m_Value: 0
+  m_Value: -1
   m_Options:
     m_Options:
-    - m_Text: A
+    - m_Text: furniture
       m_Image: {fileID: 21300000, guid: f89f849f3e24c4d4a9d63ccf99217c43, type: 3}
-    - m_Text: B
+    - m_Text: food
       m_Image: {fileID: 21300000, guid: da8f1652aaa672a4ea990e956adbba7c, type: 3}
-    - m_Text: C
+    - m_Text: 2
       m_Image: {fileID: 21300000, guid: 70e892e914c5d9649b0ea420e86c5a67, type: 3}
-    - m_Text: C
+    - m_Text: 3
       m_Image: {fileID: 21300000, guid: fe3f7bbff5adb5f4293e4eee092fb141, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1675254604}
+        m_MethodName: InputData
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1675254601
 MonoBehaviour:
@@ -2125,6 +2137,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675254598}
   m_CullTransparentMesh: 0
+--- !u!114 &1675254604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675254598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 164051d062041f44dba44c245daef7cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasPrefab1: {fileID: 3760406807030057168, guid: 67f12632dc93d08418d5577688d36ecf,
+    type: 3}
+  canvasPrefab2: {fileID: 3760406807030057168, guid: f6bf6dfd87aebe244935969bf3713e8e,
+    type: 3}
+  canvasPrefab3: {fileID: 3760406807030057168, guid: f6687d80f02e2734bbd8282175deafad,
+    type: 3}
+  canvasPrefab4: {fileID: 3760406807030057168, guid: 3aee971050de2f740a1ecfbce4664729,
+    type: 3}
 --- !u!1 &1705422000
 GameObject:
   m_ObjectHideFlags: 0
