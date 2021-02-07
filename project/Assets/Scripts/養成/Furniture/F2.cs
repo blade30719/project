@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class F1 : MonoBehaviour
+public class F2 : MonoBehaviour
 {
-    public void BuyF1()
+    public void BuyF2()
     {
-        if((SystemStorage.F1-1)<0){
+        if((SystemStorage.F2-1)<0){
             Debug.Log("庫存不足");
         }else{
-            SystemStorage.F1-=1;
+            SystemStorage.F2-=1;
         }   
     }
 }

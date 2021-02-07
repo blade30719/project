@@ -21,14 +21,5 @@ public class CoinNumber : MonoBehaviour
         SystemStorage.coin+=1;
     }
 
-    public void Buy5()
-    {
-
-        if((SystemStorage.coin-5)<0){
-            Debug.Log("餘額不足");
-        }else{
-            SystemStorage.coin-=5;
-        }
-              
-    }
+    
 }
