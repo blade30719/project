@@ -2149,9 +2149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164051d062041f44dba44c245daef7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab1: {fileID: 3760406807030057168, guid: 67f12632dc93d08418d5577688d36ecf,
+  canvasPrefab1: {fileID: 3760406807030057168, guid: 7637f55244807654bb0988262e8705a2,
     type: 3}
-  canvasPrefab2: {fileID: 3760406807030057168, guid: f6bf6dfd87aebe244935969bf3713e8e,
+  canvasPrefab2: {fileID: 3760406807030057168, guid: 66cfb35e5a8f9ce47a658cae44962f08,
     type: 3}
   canvasPrefab3: {fileID: 3760406807030057168, guid: f6687d80f02e2734bbd8282175deafad,
     type: 3}

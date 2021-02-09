@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class GetF2 : MonoBehaviour
+public class GetC8 : MonoBehaviour
 {
     void Update()
     {
-        GetComponent<Text>().text=SystemStorage.F2.ToString();   
+        GetComponent<Text>().text=SystemStorage.C8.ToString();    
     }
 }

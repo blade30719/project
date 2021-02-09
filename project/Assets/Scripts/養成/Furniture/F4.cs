@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class F4 : MonoBehaviour
 {
-    public void BuyF4()
+    public void ClickF4()
     {
         if((SystemStorage.F4-1)<0){
             Debug.Log("庫存不足");

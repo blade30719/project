@@ -8,9 +8,4 @@ public class GetF7 : MonoBehaviour
     {
         GetComponent<Text>().text=SystemStorage.F7.ToString();   
     }
-
-    /*public void ClickF7() 
-    {
-        SystemStorage.F7+=1;
-    }*/
 }
