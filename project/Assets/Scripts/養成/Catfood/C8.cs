@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-public class F3 : MonoBehaviour
+
+public class C8 : MonoBehaviour
 {
-    public void ClickF3()
+    public void ClickC8()
     {
-        if((SystemStorage.F3-1)<0){
+        if((SystemStorage.C8-1)<0){
             Debug.Log("庫存不足");
         }else{
-            SystemStorage.F3-=1;
+            SystemStorage.C8-=1;
         }   
     }
 }

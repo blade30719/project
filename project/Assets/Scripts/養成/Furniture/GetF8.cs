@@ -8,9 +8,4 @@ public class GetF8 : MonoBehaviour
     {
         GetComponent<Text>().text=SystemStorage.F8.ToString();   
     }
-
-    /*public void ClickF8() 
-    {
-        SystemStorage.F8+=1;
-    }*/
 }

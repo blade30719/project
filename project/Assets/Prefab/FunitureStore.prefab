@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 6067087698208973497}
   - component: {fileID: 410737517285918230}
   m_Layer: 0
-  m_Name: "\u5546\u54C1\u5185\u5BB92"
+  m_Name: "\u68462"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,8 +164,7 @@ GameObject:
   - component: {fileID: 3638984764777682259}
   - component: {fileID: 7800753016906958172}
   - component: {fileID: 6436171106160448177}
-  - component: {fileID: 3473248245136338451}
-  - component: {fileID: 2552933713898962926}
+  - component: {fileID: 9033612823876018525}
   m_Layer: 5
   m_Name: F4
   m_TagString: Untagged
@@ -273,8 +272,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3473248245136338451}
-        m_MethodName: Buy10
+      - m_Target: {fileID: 9033612823876018525}
+        m_MethodName: BuyF4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -284,18 +283,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2552933713898962926}
-        m_MethodName: ClickF4
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &3473248245136338451
+--- !u!114 &9033612823876018525
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -304,19 +292,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 225028027674161740}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1faeda592e739e749a140888bcbbda9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2552933713898962926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225028027674161740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb07ce9f0b1e98248a449bdee816816e, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1275673042688217054
@@ -331,8 +307,7 @@ GameObject:
   - component: {fileID: 691047629500866875}
   - component: {fileID: 731611843118216253}
   - component: {fileID: 7449147974363601651}
-  - component: {fileID: 935040794129677069}
-  - component: {fileID: 2928432457135957441}
+  - component: {fileID: 4107275457961977193}
   m_Layer: 5
   m_Name: F2
   m_TagString: Untagged
@@ -357,7 +332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54.900024, y: -155.09999}
+  m_AnchoredPosition: {x: -54.9, y: -156.43}
   m_SizeDelta: {x: 202.55917, y: 43.81981}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &691047629500866875
@@ -440,19 +415,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2928432457135957441}
-        m_MethodName: Buy5
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 935040794129677069}
-        m_MethodName: ClickF2
+      - m_Target: {fileID: 4107275457961977193}
+        m_MethodName: BuyF2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -462,7 +426,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &935040794129677069
+--- !u!114 &4107275457961977193
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -471,19 +435,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1275673042688217054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb07ce9f0b1e98248a449bdee816816e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2928432457135957441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275673042688217054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1faeda592e739e749a140888bcbbda9c, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1300754277429907901
@@ -498,8 +450,7 @@ GameObject:
   - component: {fileID: 4210025361108219723}
   - component: {fileID: 3613970065119480209}
   - component: {fileID: 4212805509939235744}
-  - component: {fileID: 241378911588529939}
-  - component: {fileID: 5558491517276218061}
+  - component: {fileID: 5346127796563134322}
   m_Layer: 5
   m_Name: F7
   m_TagString: Untagged
@@ -607,8 +558,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 241378911588529939}
-        m_MethodName: Buy20
+      - m_Target: {fileID: 5346127796563134322}
+        m_MethodName: BuyF7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -618,18 +569,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5558491517276218061}
-        m_MethodName: ClickF7
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &241378911588529939
+--- !u!114 &5346127796563134322
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -638,19 +578,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1300754277429907901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1faeda592e739e749a140888bcbbda9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5558491517276218061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300754277429907901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb07ce9f0b1e98248a449bdee816816e, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1620010219573553533
@@ -965,8 +893,7 @@ GameObject:
   - component: {fileID: 6757198127508799136}
   - component: {fileID: 1553753643276012736}
   - component: {fileID: 4132057688309973158}
-  - component: {fileID: 8282550208754195684}
-  - component: {fileID: 5492026612471478396}
+  - component: {fileID: 4039295214907094333}
   m_Layer: 5
   m_Name: F3
   m_TagString: Untagged
@@ -1074,8 +1001,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8282550208754195684}
-        m_MethodName: Buy10
+      - m_Target: {fileID: 4039295214907094333}
+        m_MethodName: BuyF3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1085,18 +1012,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5492026612471478396}
-        m_MethodName: ClickF3
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &8282550208754195684
+--- !u!114 &4039295214907094333
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1105,19 +1021,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3573357098238992123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1faeda592e739e749a140888bcbbda9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5492026612471478396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3573357098238992123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb07ce9f0b1e98248a449bdee816816e, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3660576220314777741
@@ -1210,7 +1114,7 @@ GameObject:
   - component: {fileID: 8917821521084002325}
   - component: {fileID: 5058833666183098935}
   m_Layer: 0
-  m_Name: "\u5546\u54C1\u5185\u5BB95"
+  m_Name: "\u68465"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1284,7 +1188,7 @@ GameObject:
   - component: {fileID: 8733920920019325761}
   - component: {fileID: 6739311291106763924}
   m_Layer: 0
-  m_Name: "\u5546\u54C1\u5185\u5BB97"
+  m_Name: "\u68467"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1602,8 +1506,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -324.4, y: -51.842}
-  m_SizeDelta: {x: 239.69318, y: 165.29608}
+  m_AnchoredPosition: {x: -324.4, y: -55.403}
+  m_SizeDelta: {x: 239.69318, y: 172.41714}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3760406806508873813
 CanvasRenderer:
@@ -1806,8 +1710,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54.9, y: -77.689}
-  m_SizeDelta: {x: 255.09393, y: 179.34225}
+  m_AnchoredPosition: {x: -59.94, y: -63.03}
+  m_SizeDelta: {x: 245.01215, y: 157.16223}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3760406807053710443
 CanvasRenderer:
@@ -2088,7 +1992,7 @@ GameObject:
   - component: {fileID: 7793440577211543503}
   - component: {fileID: 7268190281628056895}
   m_Layer: 0
-  m_Name: "\u5546\u54C1\u5185\u5BB98"
+  m_Name: "\u68468"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2392,7 +2296,7 @@ GameObject:
   - component: {fileID: 8763697811889813095}
   - component: {fileID: 5694765024035293364}
   m_Layer: 0
-  m_Name: "\u5546\u54C1\u5167\u5BB91"
+  m_Name: "\u68461"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2683,7 +2587,7 @@ GameObject:
   - component: {fileID: 5332420769950447870}
   - component: {fileID: 970686716976302554}
   m_Layer: 0
-  m_Name: "\u5546\u54C1\u5185\u5BB93"
+  m_Name: "\u68463"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2757,8 +2661,7 @@ GameObject:
   - component: {fileID: 2222112144033905494}
   - component: {fileID: 8608362496833948014}
   - component: {fileID: 6579969216268537172}
-  - component: {fileID: 7632470128890554654}
-  - component: {fileID: 4488578048073228599}
+  - component: {fileID: 4484050321322587487}
   m_Layer: 5
   m_Name: F1
   m_TagString: Untagged
@@ -2783,7 +2686,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -324.40002, y: -155.09999}
+  m_AnchoredPosition: {x: -324.40002, y: -156.43001}
   m_SizeDelta: {x: 202.55917, y: 43.81981}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2222112144033905494
@@ -2866,8 +2769,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7632470128890554654}
-        m_MethodName: Buy5
+      - m_Target: {fileID: 4484050321322587487}
+        m_MethodName: BuyF1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2877,18 +2780,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4488578048073228599}
-        m_MethodName: ClickF1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &7632470128890554654
+--- !u!114 &4484050321322587487
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2897,19 +2789,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6428760354157732719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1faeda592e739e749a140888bcbbda9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4488578048073228599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6428760354157732719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb07ce9f0b1e98248a449bdee816816e, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6514619490476193419
@@ -2924,7 +2804,7 @@ GameObject:
   - component: {fileID: 5935293492618747410}
   - component: {fileID: 7700267002977280009}
   m_Layer: 0
-  m_Name: "\u5546\u54C1\u5185\u5BB94"
+  m_Name: "\u68464"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2998,8 +2878,7 @@ GameObject:
   - component: {fileID: 4855393265816117531}
   - component: {fileID: 1708589377625314455}
   - component: {fileID: 4999978160439971819}
-  - component: {fileID: 41334271711023806}
-  - component: {fileID: 745213350668450766}
+  - component: {fileID: 6902281471452706927}
   m_Layer: 5
   m_Name: F6
   m_TagString: Untagged
@@ -3107,8 +2986,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 41334271711023806}
-        m_MethodName: Buy15
+      - m_Target: {fileID: 6902281471452706927}
+        m_MethodName: BuyF6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3118,18 +2997,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 745213350668450766}
-        m_MethodName: ClickF6
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &41334271711023806
+--- !u!114 &6902281471452706927
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3138,19 +3006,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6573431108754661315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1faeda592e739e749a140888bcbbda9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &745213350668450766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6573431108754661315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb07ce9f0b1e98248a449bdee816816e, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7062343595617724832
@@ -3330,7 +3186,7 @@ GameObject:
   - component: {fileID: 2023399292783117740}
   - component: {fileID: 6469581782568946848}
   m_Layer: 0
-  m_Name: "\u5546\u54C1\u5185\u5BB96"
+  m_Name: "\u68466"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3404,8 +3260,7 @@ GameObject:
   - component: {fileID: 8875005643622924285}
   - component: {fileID: 2632845258311585639}
   - component: {fileID: 859218888026365265}
-  - component: {fileID: 3394559315893003894}
-  - component: {fileID: 4405648662537010844}
+  - component: {fileID: 3489258878634160000}
   m_Layer: 5
   m_Name: F5
   m_TagString: Untagged
@@ -3513,8 +3368,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3394559315893003894}
-        m_MethodName: Buy15
+      - m_Target: {fileID: 3489258878634160000}
+        m_MethodName: BuyF5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3524,18 +3379,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4405648662537010844}
-        m_MethodName: ClickF5
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &3394559315893003894
+--- !u!114 &3489258878634160000
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3544,19 +3388,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8560941774992488427}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1faeda592e739e749a140888bcbbda9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4405648662537010844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8560941774992488427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb07ce9f0b1e98248a449bdee816816e, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8862662011984774230
@@ -3801,8 +3633,7 @@ GameObject:
   - component: {fileID: 4210915698079623235}
   - component: {fileID: 4627460570445830658}
   - component: {fileID: 2498311120815872092}
-  - component: {fileID: 5289483984067526533}
-  - component: {fileID: 8150909452815971204}
+  - component: {fileID: 9016709669884579074}
   m_Layer: 5
   m_Name: F8
   m_TagString: Untagged
@@ -3910,8 +3741,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5289483984067526533}
-        m_MethodName: Buy20
+      - m_Target: {fileID: 9016709669884579074}
+        m_MethodName: BuyF8
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3921,18 +3752,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8150909452815971204}
-        m_MethodName: ClickF8
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &5289483984067526533
+--- !u!114 &9016709669884579074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3941,18 +3761,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 9202474998593750508}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1faeda592e739e749a140888bcbbda9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8150909452815971204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9202474998593750508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb07ce9f0b1e98248a449bdee816816e, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

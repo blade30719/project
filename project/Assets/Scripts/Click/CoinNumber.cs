@@ -21,5 +21,9 @@ public class CoinNumber : MonoBehaviour
         SystemStorage.coin+=1;
     }
 
+    public void Get100() //不想努力
+    {
+        SystemStorage.coin+=100;
+    }
     
 }
