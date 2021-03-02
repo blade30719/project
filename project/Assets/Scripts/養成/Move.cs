@@ -1,32 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 public class Move : MonoBehaviour {
-    public float speed = 2; //[1] 物體移動速度
-    public Transform []target;  // [2] 目標
-    public float delta = 0.2f; // 誤差值
-    private static int i = 0;
-
-    void Update () {
-        moveTo ();  
+    public int index = 0;                 //初始位置
+    public float speed = 0.05f;           //移動速度
+    public Transform[] Target;            //移動目標
+    
+    void Update()
+    {
+       
+        if (transform.position != Target[index].position)//未達到指定的index位置，調用Move函數繼續移動
+        {
+            Cicle();  
+        }
+        
+        else//到了index位置,改變index值，不斷循環
+        {
+            index = ++index % Target.Length;
+        }
     }
-
-    void moveTo(){
-        // [3] 重新初始化目標點
-        target [i].position = new Vector3 (target [i].position.x, transform.position.y, target [i].position.z);
-
-        // [4] 讓物體朝向目標點 
-        transform.LookAt (target [i]);
-
-        // [5] 物體向前移動
-        transform.Translate (Vector3.forward * Time.deltaTime * speed);
-
-        // [6] 判斷物體是否到達目標點
-        if (transform.position.x > target[i].position.x - delta 
-            && transform.position.x < target[i].position.x + delta
-            && transform.position.z > target[i].position.z - delta
-            && transform.position.z < target[i].position.z + delta)
-            i = (i+1)%target.Length;
+    void Cicle()
+    {
+        //從當前位置按照指定速度移到index位置
+        Vector2 temp = Vector2.MoveTowards(transform.position, Target[index].position, speed * Time.deltaTime);
+        
+        GetComponent<Rigidbody2D>().MovePosition(temp);//無視物體
+    
     }
 }
