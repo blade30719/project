@@ -27,9 +27,10 @@ public class RoleAttributes : MonoBehaviour
 
     */
 
-    int HP = 999999;
+    int HP = 9999;
     int countS = 0;
     [SerializeField] Slider HealthBar;
+    
 
     void Start()
     { 
