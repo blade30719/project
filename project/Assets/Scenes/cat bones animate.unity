@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 76336218}
   - component: {fileID: 76336220}
   - component: {fileID: 76336219}
+  - component: {fileID: 76336221}
   m_Layer: 0
   m_Name: body_trigger
   m_TagString: Untagged
@@ -178,6 +179,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6285d2f5c01f474dad852761f93dbb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &76336221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76336217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 986378417}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &353538471
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 353538472}
   - component: {fileID: 353538473}
+  - component: {fileID: 353538474}
   m_Layer: 0
   m_Name: tail_trigger
   m_TagString: Untagged
@@ -202,39 +232,54 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353538471}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1988142633}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &353538473
-BoxCollider2D:
+--- !u!65 &353538473
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353538471}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.59937286, y: 0.3474412, z: 0}
+  m_Center: {x: 1.0618658, y: 0.8473855, z: 0}
+--- !u!114 &353538474
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353538471}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 1.0731714, y: 0.82114357}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5604291, y: 0.33155906}
-  m_EdgeRadius: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 899118728}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &456223237
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,12 +536,12 @@ PrefabInstance:
     - target: {fileID: 884514170637244190, guid: 26f3756e89a8ac945ac4d851c0251be2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.542719
+      value: 6.44
       objectReference: {fileID: 0}
     - target: {fileID: 884514170637244190, guid: 26f3756e89a8ac945ac4d851c0251be2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.0775166
+      value: -2.61
       objectReference: {fileID: 0}
     - target: {fileID: 884514170637244190, guid: 26f3756e89a8ac945ac4d851c0251be2,
         type: 3}
@@ -621,6 +666,12 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 2002385079484934642, guid: 26f3756e89a8ac945ac4d851c0251be2,
     type: 3}
+--- !u!1 &899118728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6812906409369205541, guid: 4a86b484b24edba45852956daa8f15a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1988142632}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &941576388 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7759707473357286820, guid: 4a86b484b24edba45852956daa8f15a9,
@@ -646,62 +697,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &941576390
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941576388}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.69818497, y: 1.1089737}
-  m_Size: {x: 0.888937, y: 0.92388296}
-  m_Direction: 0
---- !u!114 &941576391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941576388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2130008195}
-          m_MethodName: touch
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &941576392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 941576388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6285d2f5c01f474dad852761f93dbb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &986378417 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9141498642929798234, guid: 4a86b484b24edba45852956daa8f15a9,
@@ -1148,12 +1143,12 @@ PrefabInstance:
     - target: {fileID: 4381861516233487270, guid: 4a86b484b24edba45852956daa8f15a9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.093
+      value: -0.93
       objectReference: {fileID: 0}
     - target: {fileID: 4381861516233487270, guid: 4a86b484b24edba45852956daa8f15a9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.905
+      value: -0.27
       objectReference: {fileID: 0}
     - target: {fileID: 4381861516233487270, guid: 4a86b484b24edba45852956daa8f15a9,
         type: 3}
@@ -1495,6 +1490,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1988142632}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &2130008193
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130008191}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.44942454
+  m_Center: {x: -0.0022387207, y: -0.013734639, z: -0.008965313}
 --- !u!114 &2130008195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1507,3 +1515,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6285d2f5c01f474dad852761f93dbb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2130008197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130008191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2130008191}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
