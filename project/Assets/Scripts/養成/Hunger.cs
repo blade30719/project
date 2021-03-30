@@ -46,8 +46,10 @@ public class Hunger : MonoBehaviour
     public void minusMP()
     {
         MP -= 99;
-        //Debug.LogWarning("餓了阿");
+        Debug.LogWarning("餓了阿");
     }
 
-   
+    
 }
+   
+
