@@ -2288,10 +2288,10 @@ MonoBehaviour:
       m_Image: {fileID: 21300000, guid: f89f849f3e24c4d4a9d63ccf99217c43, type: 3}
     - m_Text: food
       m_Image: {fileID: 21300000, guid: da8f1652aaa672a4ea990e956adbba7c, type: 3}
-    - m_Text: 2
+    - m_Text: hospital
       m_Image: {fileID: 21300000, guid: 70e892e914c5d9649b0ea420e86c5a67, type: 3}
-    - m_Text: 3
-      m_Image: {fileID: 21300000, guid: fe3f7bbff5adb5f4293e4eee092fb141, type: 3}
+    - m_Text: toy
+      m_Image: {fileID: 21300000, guid: 629c46f7e0f766446a8f63b42cf22b31, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
