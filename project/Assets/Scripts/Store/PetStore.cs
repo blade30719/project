@@ -16,7 +16,7 @@ public class PetStore : MonoBehaviour
     
     void OnTriggerExit2D(Collider2D col)//離開銷毀按鈕
     {
-        Destroy(GameObject.Find("ToyStoreButton(Clone)"));
+        Destroy(GameObject.Find("PetStoreButton(Clone)"));
         
     }
 }
