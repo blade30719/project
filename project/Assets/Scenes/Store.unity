@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 540292181}
   - component: {fileID: 540292180}
   m_Layer: 0
-  m_Name: PetStore
+  m_Name: ToyStore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -324,7 +324,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 540292178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4cc9dc2ab3a7dd4daa85f7741c70174, type: 3}
+  m_Script: {fileID: 11500000, guid: c5cbe6e338720144bbe39a37bb99d579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 3991784040640653261, guid: ad06c6ec274cda94293758a6a1d62311, type: 3}
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 570941893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73624b41b123f1f4491d67e134323642, type: 3}
+  m_Script: {fileID: 11500000, guid: e7956aa0c26f97a43bd9844493765c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 3991784040640653261, guid: 8ff960c0c808075418ede33b597c4a55, type: 3}
@@ -607,7 +607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603623387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -409.90002, y: -253.36884, z: -10}
+  m_LocalPosition: {x: 25.599976, y: -4.3688393, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1963514322}
@@ -1193,7 +1193,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1473581836}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46da38ebab74a5f4d893598b533b6e84, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b1f4d11d84f47e4486c2ea7c705b310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 3991784040640653261, guid: b559bd6cbf1fdd4438c49ede0b5de958, type: 3}
@@ -1396,7 +1396,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1626458582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b1f4d11d84f47e4486c2ea7c705b310, type: 3}
+  m_Script: {fileID: 11500000, guid: c7c46418147fc144391cc94d8776513b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 3991784040640653261, guid: 28c9ceb7a2166fb42a0932b895a388ee, type: 3}
@@ -1652,7 +1652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826466663}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.703583, y: -10.407288, z: -10}
+  m_LocalPosition: {x: 25.599976, y: -4.3688393, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
