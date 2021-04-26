@@ -2195,6 +2195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b34d41e48223943afdda57a545d637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ball: {fileID: 232628951007108814, guid: 31c9751b16e55d64991e286267391ced, type: 3}
+  canvas: {fileID: 3760406807030057168}
   Pic1: {fileID: 1339785757599411540}
 --- !u!1 &6573431108754661315
 GameObject:
