@@ -13,6 +13,8 @@ public class Dropdown : MonoBehaviour
     public GameObject canvasPrefab3;
     public GameObject canvasPrefab4;
 
+    public int Value { get; internal set; }
+
     void Start(){
       //m_Dropdown = GetComponent<Dropdown>();
       //Debug.Log(m_Dropdown.value);
