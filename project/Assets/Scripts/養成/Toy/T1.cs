@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class T1 : MonoBehaviour
 {
+    public GameObject ball;
+    public GameObject canvas;//要移除的canvas
     public GameObject Pic1;
     private Image Image1;
 
@@ -26,6 +28,9 @@ public class T1 : MonoBehaviour
             if(SystemStorage.T1==0){
                 Image1.color = Color.gray;//灰
             }
+            Destroy (canvas);//刪掉canvas
+            Instantiate (ball, Vector2.zero, Quaternion.identity);//產生ball
+            
         }   
     }
     

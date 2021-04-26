@@ -14,6 +14,7 @@ public class ThrowBall : MonoBehaviour
         BallRb = GetComponent<Rigidbody>();
         position = ball.transform.position.z;
         Debug.Log(position);
+        ball.transform.position = new Vector3((float)-0.06, (float)0.96, -8);
     }
 
     // Update is called once per frame
