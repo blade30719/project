@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 81600332235224973}
   - component: {fileID: 8979663579111331728}
   m_Layer: 5
-  m_Name: StoreButton2
+  m_Name: CatfoodStoreButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,8 +135,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -686.5, y: -345.5}
-  m_SizeDelta: {x: 206.74713, y: 143.42322}
+  m_AnchoredPosition: {x: -248, y: -106}
+  m_SizeDelta: {x: 85, y: 58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4910624245659354589
 CanvasRenderer:

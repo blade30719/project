@@ -17,7 +17,7 @@ public class startText : MonoBehaviour
     {
         if (mytext.text == ""){//如果是空的
 
-            mytext.text = "點擊螢幕任意處進行遊戲"; //顯示此文字
+            mytext.text = "Start game"; //顯示此文字
 
         }else{
 
