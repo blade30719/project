@@ -543,7 +543,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1628837068}
         m_MethodName: Get100
         m_Mode: 1
         m_Arguments:
@@ -2046,8 +2046,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.6, y: 132.76}
-  m_SizeDelta: {x: 44.494934, y: 9.623936}
+  m_AnchoredPosition: {x: 19.8, y: 131.74}
+  m_SizeDelta: {x: 44.494934, y: 10.317894}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1628837068
 MonoBehaviour:
@@ -2088,11 +2088,11 @@ MonoBehaviour:
     m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 100
   m_Text: 0
 --- !u!222 &1628837070
 CanvasRenderer:
@@ -2338,7 +2338,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 100
   m_Text: ':'
 --- !u!222 &1819820478
 CanvasRenderer:
