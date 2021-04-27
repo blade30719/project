@@ -503,7 +503,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -744.0503, y: 295.80002}
+  m_AnchoredPosition: {x: -365.10028, y: 214.91}
   m_SizeDelta: {x: 273.18573, y: 154.07283}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427835819
@@ -765,7 +765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -437.95, y: 116.89}
+  m_AnchoredPosition: {x: -59, y: 36}
   m_SizeDelta: {x: 273.18695, y: 154.07544}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468646276
@@ -1284,7 +1284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -437.95032, y: 295.8}
+  m_AnchoredPosition: {x: -59.000305, y: 214.90997}
   m_SizeDelta: {x: 273.18695, y: 154.07544}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1183119906
@@ -1427,7 +1427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -591, y: -112}
+  m_AnchoredPosition: {x: -212.04999, y: -192.89001}
   m_SizeDelta: {x: 579.28625, y: 261.33447}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1227515328
@@ -1899,7 +1899,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156, y: 329.76}
+  m_AnchoredPosition: {x: 222.95001, y: 248.87}
   m_SizeDelta: {x: 112.947845, y: 86.1499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1940217624
@@ -2108,7 +2108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -744.0503, y: 117.80001}
+  m_AnchoredPosition: {x: -365.10028, y: 36.909996}
   m_SizeDelta: {x: 273.18573, y: 155.90039}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2123864336
