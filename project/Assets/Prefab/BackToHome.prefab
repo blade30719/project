@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4630004036203152046}
   - component: {fileID: 4630004036203152045}
   m_Layer: 5
-  m_Name: BackToHome
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 283, y: 145.6}
-  m_SizeDelta: {x: 64.007324, y: 62.847748}
+  m_AnchoredPosition: {x: 866, y: 443}
+  m_SizeDelta: {x: 120.47977, y: 118.29715}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4630004036203152047
 CanvasRenderer:
