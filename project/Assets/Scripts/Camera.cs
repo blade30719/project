@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,5 +24,10 @@ public class Camera : MonoBehaviour
         limitY = Mathf.Clamp(MousePos.y, 0 + 0.5f, 9 - 0.5f);
         MousePos = new Vector3(limitX, transform.position.y,transform.position.z);
         transform.position = MousePos;                                         //更新位置
+    }
+
+    internal Vector3 ScreenToWorldPosition(Vector3 mousePosition)
+    {
+        throw new NotImplementedException();
     }
 }
