@@ -7,10 +7,10 @@ public class NewThrowBall : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    
-
+    [SerializeField] private Camera follow; 
     [SerializeField] private GameObject ball;
     private Vector2 mousePos;
+    
     
 
     void Start()
@@ -21,9 +21,11 @@ public class NewThrowBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mousePos = new Vector2(Input.mousePosition.x / Screen.width * 16 , Input.mousePosition.y / Screen.height * 9);
-        //transform.position = new Vector3(Input.mousePosition.x , Input.mousePosition.y , 1);
-        transform.position = new Vector3(mousePos.x,mousePos.y,-1);
+        //mousePos = new Vector2(Input.mousePosition.x / Screen.width * 16 , Input.mousePosition.y / Screen.height * 9);
+        //transform.position = new Vector3(mousePos.x,mousePos.y,-1);
+        Vector3 mouseWorldPosition = follow.ScreenToWorldPosition(Input.mousePosition);
+        mouseWorldPosition.z = -2;
+        transform.position = mouseWorldPosition;
     }
 
     private void OnGUI()
