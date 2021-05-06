@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class moveCamera : MonoBehaviour
 {
     // Start is called before the first frame update
     private Vector3 MousePos , mousePos;
@@ -16,14 +16,12 @@ public class Camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mousePos = new Vector2(Input.mousePosition.x / Screen.width * 128, Input.mousePosition.y / Screen.height * 72);     //滑鼠位置
+        mousePos = new Vector2(Input.mousePosition.x / Screen.width -0.5f, Input.mousePosition.y / Screen.height * 72);     //滑鼠位置
 
-        MousePos = new Vector2(Input.mousePosition.x / Screen.width * 128, Input.mousePosition.y / Screen.height * 72);     //滑鼠位置
-        limitX = Mathf.Clamp(MousePos.x, -15.5f, 17.5f);                       //X軸範圍
-        limitY = Mathf.Clamp(MousePos.y, 0 + 0.5f, 9 - 0.5f);                  //Y軸範圍
-        //MousePos = new Vector2(Input.mousePosition.x / Screen.width * 256, Input.mousePosition.y / Screen.height * 72);
-        //limitX = Mathf.Clamp(MousePos.x, -15.5f, 17.5f);
-        //limitY = Mathf.Clamp(MousePos.y, 0 + 0.5f, 9 - 0.5f);
+        MousePos = new Vector2(Input.mousePosition.x / Screen.width -0.5f, Input.mousePosition.y / Screen.height * 72);     //滑鼠位置
+        limitX = Mathf.Clamp(transform.position.x + MousePos.x, -15.5f, 17.5f);                       //X軸範圍 *
+        //limitY = Mathf.Clamp(MousePos.y, 0 + 0.5f, 9 - 0.5f);                  //Y軸範圍
+        
         MousePos = new Vector3(limitX, transform.position.y,transform.position.z);
         if(mousePos.y >= 15.0)
             transform.position = MousePos;                                         //更新位置
@@ -36,6 +34,7 @@ public class Camera : MonoBehaviour
 
     private void OnGUI()
     {
+        GUI.Label(new Rect(10, 30, 300, 20), Input.mousePosition.ToString());
         GUI.Label(new Rect(10, 10, 300, 20), mousePos.ToString());
     }
 }

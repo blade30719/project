@@ -7,7 +7,7 @@ public class NewThrowBall : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    [SerializeField] private Camera follow; 
+    public Camera follow; 
     [SerializeField] private GameObject ball;
     private Vector2 mousePos;
     
@@ -23,7 +23,7 @@ public class NewThrowBall : MonoBehaviour
     {
         //mousePos = new Vector2(Input.mousePosition.x / Screen.width * 16 , Input.mousePosition.y / Screen.height * 9);
         //transform.position = new Vector3(mousePos.x,mousePos.y,-1);
-        Vector3 mouseWorldPosition = follow.ScreenToWorldPosition(Input.mousePosition);
+        Vector3 mouseWorldPosition = follow.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = -2;
         transform.position = mouseWorldPosition;
     }
