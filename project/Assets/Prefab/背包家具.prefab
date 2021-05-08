@@ -2225,7 +2225,7 @@ GameObject:
   - component: {fileID: 2222112144033905494}
   - component: {fileID: 8608362496833948014}
   - component: {fileID: 6579969216268537172}
-  - component: {fileID: 5309981269874078746}
+  - component: {fileID: 1566606929307343064}
   m_Layer: 5
   m_Name: F1
   m_TagString: Untagged
@@ -2333,7 +2333,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5309981269874078746}
+      - m_Target: {fileID: 1566606929307343064}
         m_MethodName: ClickF1
         m_Mode: 1
         m_Arguments:
@@ -2344,7 +2344,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5309981269874078746
+--- !u!114 &1566606929307343064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
