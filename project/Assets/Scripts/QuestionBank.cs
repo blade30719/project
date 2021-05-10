@@ -22,12 +22,12 @@ public class QuestionBank : MonoBehaviour
     public int num = 0;
 
     //設定題目
-    string[] question = new string[] { "1 + 1 = ?", "2 + 3 = ?", "3 + 4 = ?" };
-    string[] answer1 = new string[] { "2", "1", "8" };
-    string[] answer2 = new string[] { "9", "6", "2" };
-    string[] answer3 = new string[] { "5", "5", "7" };
-    string[] answer4 = new string[] { "7", "0", "6" };
-    string[] answer5 = new string[] { "2", "5", "7" };
+    string[] question = new string[] { "貓的骨頭有幾根?", "貓咪的正常體溫應為?", "貓咪眼睛在黑暗會發亮是因為牠們的視網膜底下有一層什麼構造?" };
+    string[] answer1 = new string[] { "200", "35.5~36.5", "絨毛層" };
+    string[] answer2 = new string[] { "206", "36.5~38.2", "絨布層" };
+    string[] answer3 = new string[] { "230", "37.5~39.2", "絨氈層" };
+    string[] answer4 = new string[] { "236", "39.0~40.0", "絨水層" };
+    string[] answer5 = new string[] { "230", "37.5~39.2", "絨氈層" };
 
     /*
     string[] question = new string[1000];
