@@ -981,7 +981,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "[\u55AE\u9078\u984C]\u8C93\u7684\u9AA8\u982D\u6709\u5E7E\u6839?"
+  m_text: "[\u55AE\u9078\u984C]"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a568c80edeca3149b106ef70b3481e1, type: 2}
   m_sharedMaterial: {fileID: 21350758843490908, guid: 6a568c80edeca3149b106ef70b3481e1,
@@ -1051,10 +1051,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 407742357}
-    characterCount: 13
+    characterCount: 5
     spriteCount: 0
     spaceCount: 0
-    wordCount: 2
+    wordCount: 1
     linkCount: 0
     lineCount: 1
     pageCount: 1
