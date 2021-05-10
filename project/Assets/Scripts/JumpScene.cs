@@ -39,4 +39,9 @@ public class JumpScene : MonoBehaviour
     {
         SceneManager.LoadScene("Home");
     }
+
+    public void nextKnowLedge()
+    {
+        SceneManager.LoadScene("Knowledge");
+    }
 }
