@@ -25,14 +25,17 @@ public class ThrowBall : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             touchcount++;
+            Debug.Log(touchcount);
         }
-        if(touchcount == 1)
+        if(touchcount >= 1)
         {
-            BallRb.useGravity = true;
             position = ball.transform.position.z;
             if (position < 0)
             {
-                BallRb.velocity = new Vector3(0, 0, 2);
+                Debug.Log(touchcount);
+                BallRb.useGravity = true;
+                BallRb.velocity = new Vector3(0, 0, 3);
+                //BallRb.AddForce(transform.up  * 3 + transform.forward * 3);
                 //BallRb.transform.Rotate(0,0,(float)0.5);
             }
             else
@@ -40,6 +43,12 @@ public class ThrowBall : MonoBehaviour
                 BallRb.velocity = new Vector3(0, 0, 0);
                 BallRb.useGravity = false;
             }
+            
         }
+    }
+
+    public Vector3 getBallPosition()
+    {
+        return ball.transform.position;
     }
 }
