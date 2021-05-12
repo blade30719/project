@@ -52,4 +52,10 @@ public class ThrowBall : MonoBehaviour
     {
         return ball.transform.position;
     }
+
+    /*public static GameObject getBall()
+    {
+        Debug.Log("球球球");
+        //return ball;
+    }*/
 }
