@@ -42,6 +42,7 @@ public class ThrowBall : MonoBehaviour
             {
                 BallRb.velocity = new Vector3(0, 0, 0);
                 BallRb.useGravity = false;
+                GameObject.Find("小貓走路").GetComponent<Move>().moveToBall();
             }
             
         }
