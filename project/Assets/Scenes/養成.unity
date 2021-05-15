@@ -1164,6 +1164,7 @@ MonoBehaviour:
   - {fileID: 1695971335}
   - {fileID: 339674624}
   - {fileID: 667576770}
+  ball: {fileID: 0}
 --- !u!50 &596262704
 Rigidbody2D:
   serializedVersion: 4
@@ -2223,6 +2224,7 @@ MonoBehaviour:
   - {fileID: 1695971335}
   - {fileID: 339674624}
   - {fileID: 667576770}
+  ball: {fileID: 0}
 --- !u!50 &1601296486
 Rigidbody2D:
   serializedVersion: 4
