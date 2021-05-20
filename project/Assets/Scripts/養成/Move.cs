@@ -5,6 +5,8 @@ public class Move : MonoBehaviour {
     public int index = 0;                 //初始位置
     public float speed = 0.05f;           //移動速度
     public Transform[] Target;            //移動目標
+    //public GameObject ball = GameObject.Find("毛球(Clone)");
+    public GameObject gb;
     
     void Update()
     {
@@ -18,6 +20,8 @@ public class Move : MonoBehaviour {
         {
             index = ++index % Target.Length;
         }
+
+        
     }
     void Cicle()
     {
@@ -26,5 +30,17 @@ public class Move : MonoBehaviour {
         
         GetComponent<Rigidbody2D>().MovePosition(temp);//無視物體
     
+    }
+
+    public void moveToBall()
+    {
+        // Vector2 temp = Vector2.MoveTowards(transform.position, ball.GetComponent<ThrowBall>().getBallPosition(), speed * Time.deltaTime);
+        //gb = ball.GetComponent<ThrowBall>().getBall();
+        
+    }
+
+    public void setgb()
+    {
+        
     }
 }
