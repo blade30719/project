@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dictionary.unity
     guid: 53b72e90458b0064a8f184f4a59ffea0
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 2005f0e268675d6498162e8ffee2fa11
   m_configObjects: {}
