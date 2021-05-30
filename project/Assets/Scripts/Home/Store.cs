@@ -21,6 +21,6 @@ public class Store : MonoBehaviour
     }
     public void nextScene()//切換場景
     {
-        SceneManager.LoadScene("Store");
+        SceneManager.LoadScene("Shop");
     }
 }
