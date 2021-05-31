@@ -29,7 +29,8 @@ public class T1 : MonoBehaviour
                 Image1.color = Color.gray;//灰
             }
             Destroy (canvas);//刪掉canvas
-            Instantiate (ball, Vector2.zero, Quaternion.identity);//產生ball
+            Destroy(GameObject.Find("毛球(Clone)"));
+            Instantiate(ball, Vector2.zero, Quaternion.identity);//產生ball
             
         }   
     }
