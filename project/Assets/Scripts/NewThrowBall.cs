@@ -41,7 +41,7 @@ public class NewThrowBall : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 startPos = Input.mousePosition;
-                Debug.Log(startPos);
+                //Debug.Log(startPos);
             }
 
             if (Input.GetMouseButtonUp(0))
@@ -91,7 +91,7 @@ public class NewThrowBall : MonoBehaviour
                 BallRb.useGravity = false;
             }
         }
-        if(countNum == 3)
+        if(countNum >= 3)
         {
             if (ball.transform.position.z >= 0)
             {
@@ -103,9 +103,11 @@ public class NewThrowBall : MonoBehaviour
 
     }
 
-    private void OnGUI()
+    /*
+     private void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 300, 20), MousePos.ToString());
         GUI.Label(new Rect(10, 30, 300, 20), ball.transform.position.ToString());
     }
+    */
 }
