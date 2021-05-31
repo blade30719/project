@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 5813527963386595115}
   - component: {fileID: 82862777656136252}
   m_Layer: 5
-  m_Name: BackStore
+  m_Name: BackShop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
