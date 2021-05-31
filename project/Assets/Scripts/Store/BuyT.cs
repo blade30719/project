@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class BuyT : MonoBehaviour
 {
+    public GameObject canvasPrefab;//要產生的canvas
     public void BuyT1()
     {
 
         if((SystemStorage.coin-5)<0){
             Debug.Log("餘額不足");
+            Instantiate (canvasPrefab, Vector2.zero, Quaternion.identity);//產生canvasPrefab
         }else{
             SystemStorage.coin-=5;
             SystemStorage.T1+=1;
