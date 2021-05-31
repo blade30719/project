@@ -16,6 +16,7 @@ public class NewThrowBall : MonoBehaviour
     private Vector3 endPos;
     private string direction;
     int countNum = 0;
+    bool times = false;
     
     
 
@@ -97,6 +98,12 @@ public class NewThrowBall : MonoBehaviour
             {
                 BallRb.velocity = new Vector3(0, 0, 0);
                 BallRb.useGravity = false;
+                ball.transform.position = new Vector3(ball.transform.position.x, ball.transform.position.y, 0);
+                if (times == false)
+                {
+                    FindObjectOfType<Move>().setgb();
+                    times = true;
+                }
             }
         }
 
