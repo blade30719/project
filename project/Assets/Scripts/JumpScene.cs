@@ -38,6 +38,7 @@ public class JumpScene : MonoBehaviour
     public void backToHome()
     {
         SceneManager.LoadScene("Home");
+        GameObject.Find("Main Camera").GetComponent<TimePause>().setTimeScale(true);
     }
 
     public void nextKnowLedge()
