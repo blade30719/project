@@ -2459,7 +2459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  speed: 5
+  speed: 7
   Target:
   - {fileID: 1169296079}
   - {fileID: 1169296079}
