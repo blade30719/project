@@ -22,12 +22,13 @@ public class QuestionBank : MonoBehaviour
     public int num = 0;
 
     //設定題目
-    string[] question = new string[] { "貓的骨頭有幾根?", "貓咪的正常體溫應為?", "貓咪眼睛在黑暗會發亮是因為牠們的視網膜底下有一層什麼構造?" };
-    string[] answer1 = new string[] { "200", "35.5~36.5", "絨毛層" };
-    string[] answer2 = new string[] { "206", "36.5~38.2", "絨布層" };
-    string[] answer3 = new string[] { "230", "37.5~39.2", "絨氈層" };
-    string[] answer4 = new string[] { "236", "39.0~40.0", "絨水層" };
-    string[] answer5 = new string[] { "230", "37.5~39.2", "絨氈層" };
+    string[] question = new string[] {"有很多人對貓的毛髮過敏?","孕婦是否能夠養貓?","幼年貓咪平均一天吃幾餐?","你可以為貓咪準備什麼玩具?","貓咪不能吃什麼食物?", "貓咪刷牙的頻率應為多久一次?","貓咪最好少吃哪一種魚?","貓咪的正常體溫應為?","下列的花哪一種對貓咪來說毒性最強?","貓咪常見的體內寄生蟲?"};
+    string[] answer1 = new string[] {"是",                         "是",                 "兩餐",                "逗貓棒",                 "酪梨",                "不用刷牙",              "秋刀魚",           "攝氏35.5~36.2",             "牽牛花",                       "蛔蟲"};
+    string[] answer2 = new string[] {"否",                         "否",                 "三餐",                "貓抓板",                  "巧克力",              "一天一次",               "沙丁魚",          "攝氏36.5~38.2",             "百合",                        "鉤蟲"};
+    string[] answer3 = new string[] {" ",                          " ",                  "四餐",               "毛絨玩具",                 "葡萄",                "一天兩次",              "比目魚",          "攝氏37.5~39.2",              "向日葵",                      "球蟲"};
+    string[] answer4 = new string[] {" ",                          " ",                 "多於五餐",            "以上皆是",                 "以上皆是",             "一周一次",              "吳郭魚",          "攝氏39.0~40.0",              "以上皆是",                    "以上皆是"};
+    string[] answer5 = new string[] {"否",                         "是",                "多於五餐",            "以上皆是",                 "以上皆是",             "一天一次",              "秋刀魚",          "攝氏37.5~39.2",              "百合",                        "以上皆是"};
+
 
     /*
     string[] question = new string[1000];
@@ -37,10 +38,12 @@ public class QuestionBank : MonoBehaviour
     string[] answer4 = new string[1000];
     string[] answer5 = new string[1000] ;
     */
-
+    
     void Start()
     {
-        num = Random.Range(0, 3);           // 取得題號
+        
+        
+        num = Random.Range(0, 9);           // 取得題號
         Debug.Log(num);
 
         // 印出題目
@@ -49,6 +52,8 @@ public class QuestionBank : MonoBehaviour
         btn2.text = answer2[num];
         btn3.text = answer3[num];
         btn4.text = answer4[num];
+        
+        
     }
 
     // Update is called once per frame
