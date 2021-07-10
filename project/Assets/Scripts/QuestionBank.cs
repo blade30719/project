@@ -43,7 +43,9 @@ public class QuestionBank : MonoBehaviour
     {
         
         
-        num = Random.Range(0, 9);           // 取得題號
+        //num = Random.Range(0, 9);           // 取得題號
+        SystemStorage.Question += 1;
+        num = SystemStorage.Question;
         Debug.Log(num);
 
         // 印出題目

@@ -386,9 +386,9 @@ GameObject:
   - component: {fileID: 6869062304156874501}
   - component: {fileID: 8819833632301051123}
   - component: {fileID: 5058727904348406310}
-  - component: {fileID: 4799189503046936249}
+  - component: {fileID: 2767088614164249430}
   m_Layer: 5
-  m_Name: F4
+  m_Name: C3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -407,7 +407,7 @@ RectTransform:
   m_Children:
   - {fileID: 2624995245306458590}
   m_Father: {fileID: 3760406807030057172}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -494,8 +494,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4799189503046936249}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 2767088614164249430}
+        m_MethodName: BuyC3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -505,7 +505,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4799189503046936249
+--- !u!114 &2767088614164249430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -514,10 +514,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 977107487447490397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f0fa172dfca2154ba4f8243ecfb04d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &994426854150723736
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,7 +530,7 @@ GameObject:
   - component: {fileID: 3350061047994952877}
   - component: {fileID: 787354067332347675}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Catfoodbtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -671,8 +670,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 340.19995, y: 136.09998}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_AnchoredPosition: {x: 336.99997, y: 140.99997}
+  m_SizeDelta: {x: 281.9038, y: 246.2179}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2594983542167529213
 CanvasRenderer:
@@ -701,7 +700,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b28273886c67184bb5887820a15bf27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e68ff241404ee1f409ca32d24ce6dedc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -949,9 +948,9 @@ GameObject:
   - component: {fileID: 6331588671775942900}
   - component: {fileID: 7850998346250876735}
   - component: {fileID: 7863189232238460333}
-  - component: {fileID: 6002920095586378460}
+  - component: {fileID: 5531207218993652092}
   m_Layer: 5
-  m_Name: F5
+  m_Name: C5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1057,8 +1056,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6002920095586378460}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 5531207218993652092}
+        m_MethodName: BuyC5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1068,7 +1067,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6002920095586378460
+--- !u!114 &5531207218993652092
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1077,10 +1076,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1635979432835947365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f0fa172dfca2154ba4f8243ecfb04d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &1712901286532707426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,9 +1465,9 @@ GameObject:
   - component: {fileID: 6826225215141352381}
   - component: {fileID: 520013484873649255}
   - component: {fileID: 7388728635342103452}
-  - component: {fileID: 5725556243163566892}
+  - component: {fileID: 1635695001848383074}
   m_Layer: 5
-  m_Name: F3
+  m_Name: C4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1488,7 +1486,7 @@ RectTransform:
   m_Children:
   - {fileID: 7681145210890389267}
   m_Father: {fileID: 3760406807030057172}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1575,8 +1573,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5725556243163566892}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 1635695001848383074}
+        m_MethodName: BuyC4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1586,7 +1584,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5725556243163566892
+--- !u!114 &1635695001848383074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1595,10 +1593,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3504997960246836195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f0fa172dfca2154ba4f8243ecfb04d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &3507362599769123695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,7 +1683,7 @@ GameObject:
   - component: {fileID: 3760406807030057174}
   - component: {fileID: 3760406807030057175}
   m_Layer: 5
-  m_Name: Food
+  m_Name: Catfood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1729,8 +1726,8 @@ RectTransform:
   - {fileID: 380734409341605848}
   - {fileID: 1416487527120006854}
   - {fileID: 30358217152433550}
-  - {fileID: 6546409838401151968}
   - {fileID: 8192908567468744509}
+  - {fileID: 6546409838401151968}
   - {fileID: 3896451620963648978}
   - {fileID: 7086023993215195668}
   - {fileID: 1514756544134736069}
@@ -2098,7 +2095,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4aaf47042c58c2a41b798072c541538e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4635686e9b7eb6e41b64ba4044ba3b73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2216,8 +2213,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.799927, y: -219.90002}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_AnchoredPosition: {x: -40.8, y: -212.9}
+  m_SizeDelta: {x: 254.8529, y: 223.73892}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4537415592523577110
 CanvasRenderer:
@@ -2246,7 +2243,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b28273886c67184bb5887820a15bf27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a314caea0c239d4a8d17f8d86338001, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2420,9 +2417,9 @@ GameObject:
   - component: {fileID: 2342100820809428127}
   - component: {fileID: 1551292973415080599}
   - component: {fileID: 6400661359921296329}
-  - component: {fileID: 1324113703398033700}
+  - component: {fileID: 5602265530962476733}
   m_Layer: 5
-  m_Name: F8
+  m_Name: C8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2528,8 +2525,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1324113703398033700}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 5602265530962476733}
+        m_MethodName: BuyC8
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2539,7 +2536,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1324113703398033700
+--- !u!114 &5602265530962476733
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2548,10 +2545,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5838706985307493245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f0fa172dfca2154ba4f8243ecfb04d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &6046820681974901566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,9 +2560,9 @@ GameObject:
   - component: {fileID: 5686889657977120379}
   - component: {fileID: 2484774282634863466}
   - component: {fileID: 2170741045820381883}
-  - component: {fileID: 1763120454560173473}
+  - component: {fileID: 5910381800580946650}
   m_Layer: 5
-  m_Name: F6
+  m_Name: C6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2672,8 +2668,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1763120454560173473}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 5910381800580946650}
+        m_MethodName: BuyC6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2683,7 +2679,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1763120454560173473
+--- !u!114 &5910381800580946650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2692,10 +2688,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6046820681974901566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f0fa172dfca2154ba4f8243ecfb04d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &6056793410646968084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,9 +2703,9 @@ GameObject:
   - component: {fileID: 1009989627695669316}
   - component: {fileID: 5199155052981971045}
   - component: {fileID: 6818678514092566379}
-  - component: {fileID: 3428085727703651553}
+  - component: {fileID: 2346488540733935291}
   m_Layer: 5
-  m_Name: F1
+  m_Name: C1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2816,8 +2811,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3428085727703651553}
-        m_MethodName: BuyF1
+      - m_Target: {fileID: 2346488540733935291}
+        m_MethodName: BuyC1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2827,7 +2822,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3428085727703651553
+--- !u!114 &2346488540733935291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2836,7 +2831,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6056793410646968084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f0fa172dfca2154ba4f8243ecfb04d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6363014019413226739
@@ -2873,8 +2868,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 726.19995, y: 135.09998}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_AnchoredPosition: {x: 726, y: 134}
+  m_SizeDelta: {x: 158.62549, y: 139.2121}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3100422108942406596
 CanvasRenderer:
@@ -2903,7 +2898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b28273886c67184bb5887820a15bf27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e0a213feafd15a54987a78f42d85987a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3055,7 +3050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b28273886c67184bb5887820a15bf27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4aaf47042c58c2a41b798072c541538e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3077,9 +3072,9 @@ GameObject:
   - component: {fileID: 6538607901628935743}
   - component: {fileID: 7522224005983898728}
   - component: {fileID: 3564288876795913118}
-  - component: {fileID: 1194225140575114822}
+  - component: {fileID: 8496071295871859371}
   m_Layer: 5
-  m_Name: F7
+  m_Name: C7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3185,8 +3180,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1194225140575114822}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 8496071295871859371}
+        m_MethodName: BuyC7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3196,7 +3191,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1194225140575114822
+--- !u!114 &8496071295871859371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3205,10 +3200,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6599164927693794872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f0fa172dfca2154ba4f8243ecfb04d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &6707598709251267753
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,8 +3237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -411, y: -222}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_AnchoredPosition: {x: -390.47, y: -209.2}
+  m_SizeDelta: {x: 245.38953, y: 206.58777}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6218517398059335124
 CanvasRenderer:
@@ -3273,7 +3267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b28273886c67184bb5887820a15bf27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a0a1e65e878c3bd439c57baf8f37b1b3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3447,9 +3441,9 @@ GameObject:
   - component: {fileID: 2504220791127955324}
   - component: {fileID: 8661618177351074722}
   - component: {fileID: 8488056719801382127}
-  - component: {fileID: 5505540240522653098}
+  - component: {fileID: 7643384684565266975}
   m_Layer: 5
-  m_Name: F2
+  m_Name: C2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3555,8 +3549,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5505540240522653098}
-        m_MethodName: BuyF2
+      - m_Target: {fileID: 7643384684565266975}
+        m_MethodName: BuyC2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3566,7 +3560,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5505540240522653098
+--- !u!114 &7643384684565266975
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3575,7 +3569,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7367660670096102442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f0fa172dfca2154ba4f8243ecfb04d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7581896969641025511
@@ -3690,8 +3684,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 729.19995, y: -220.90002}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_AnchoredPosition: {x: 723, y: -209.20003}
+  m_SizeDelta: {x: 188.78296, y: 155.72568}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7039862436011208833
 CanvasRenderer:
@@ -3720,7 +3714,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b28273886c67184bb5887820a15bf27, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4395a6633b13ce0469ad7a65efb67324, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3838,8 +3832,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -43.799927, y: 136.09998}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_AnchoredPosition: {x: -47, y: 143.1}
+  m_SizeDelta: {x: 255.84924, y: 245.05908}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2839373299631888326
 CanvasRenderer:
@@ -3868,7 +3862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4395a6633b13ce0469ad7a65efb67324, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 689cda3f674b92a469bfbf3189cc3c89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
