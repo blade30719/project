@@ -12,9 +12,9 @@ public class Goods : MonoBehaviour
         
     }
     
-    public void OnClickFood()
+    public void OnClickCatfood()
     {
-        Destroy(GameObject.Find("Food(Clone)"));//刪掉canvas1
+        Destroy(GameObject.Find("Catfood(Clone)"));//刪掉canvas1
         Destroy(GameObject.Find("Hospital(Clone)"));//刪掉canvas2
         Destroy(GameObject.Find("Furniture(Clone)"));//刪掉canvas3
         Destroy(GameObject.Find("Toy(Clone)"));//刪掉canvas4
@@ -22,7 +22,7 @@ public class Goods : MonoBehaviour
     }
     public void OnClickHos()
     {
-        Destroy(GameObject.Find("Food(Clone)"));//刪掉canvas1
+        Destroy(GameObject.Find("Catfood(Clone)"));//刪掉canvas1
         Destroy(GameObject.Find("Hospital(Clone)"));//刪掉canvas2
         Destroy(GameObject.Find("Furniture(Clone)"));//刪掉canvas3
         Destroy(GameObject.Find("Toy(Clone)"));//刪掉canvas4
@@ -30,7 +30,7 @@ public class Goods : MonoBehaviour
     }
     public void OnClickFur()
     {
-        Destroy(GameObject.Find("Food(Clone)"));//刪掉canvas1
+        Destroy(GameObject.Find("Catfood(Clone)"));//刪掉canvas1
         Destroy(GameObject.Find("Hospital(Clone)"));//刪掉canvas2
         Destroy(GameObject.Find("Furniture(Clone)"));//刪掉canvas3
         Destroy(GameObject.Find("Toy(Clone)"));//刪掉canvas4
@@ -38,7 +38,7 @@ public class Goods : MonoBehaviour
     }
     public void OnClickToy()
     {
-        Destroy(GameObject.Find("Food(Clone)"));//刪掉canvas1
+        Destroy(GameObject.Find("Catfood(Clone)"));//刪掉canvas1
         Destroy(GameObject.Find("Hospital(Clone)"));//刪掉canvas2
         Destroy(GameObject.Find("Furniture(Clone)"));//刪掉canvas3
         Destroy(GameObject.Find("Toy(Clone)"));//刪掉canvas4

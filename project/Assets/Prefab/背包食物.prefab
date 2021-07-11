@@ -217,6 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86f05a88f125fe44a41e93db8824124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pic1: {fileID: 5469082072033870859}
 --- !u!1 &1275673042688217054
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,6 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61fb0e2846369d34395efbea87b24a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pic1: {fileID: 8024458986095932622}
 --- !u!1 &1300754277429907901
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,6 +505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bcc2e8f92ccf524694ddf08f285148f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pic1: {fileID: 1545162911525411850}
 --- !u!1 &1545162911525411850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,6 +1127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a6a48e30e6990649b439f8a6b208835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pic1: {fileID: 3834066593681169267}
 --- !u!1 &3660576220314777741
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,6 +2737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d803d05baf64504d89742127412881a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pic1: {fileID: 3724161041023838221}
 --- !u!1 &6573431108754661315
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,6 +2881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22f8105f43c0ab34ca1714af33b5776d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pic1: {fileID: 8230225178815666174}
 --- !u!1 &7996865841660506169
 GameObject:
   m_ObjectHideFlags: 0
@@ -3315,6 +3321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c5ee1f8c1bc99248a2081c2dd5cb027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pic1: {fileID: 1708933307737908626}
 --- !u!1 &8749200761597727739
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,3 +3725,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 198ed49e8c75ee045bbfb9bfc4dd58fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pic1: {fileID: 2026094552633039075}

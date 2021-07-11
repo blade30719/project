@@ -256,7 +256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 9}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1010390670890955274
@@ -386,9 +386,9 @@ GameObject:
   - component: {fileID: 6869062304156874501}
   - component: {fileID: 8819833632301051123}
   - component: {fileID: 5058727904348406310}
-  - component: {fileID: 4799189503046936249}
+  - component: {fileID: 857204579040505599}
   m_Layer: 5
-  m_Name: F4
+  m_Name: F3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -407,7 +407,7 @@ RectTransform:
   m_Children:
   - {fileID: 2624995245306458590}
   m_Father: {fileID: 3760406807030057172}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -494,8 +494,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4799189503046936249}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 857204579040505599}
+        m_MethodName: BuyF3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -505,7 +505,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4799189503046936249
+--- !u!114 &857204579040505599
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -514,10 +514,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 977107487447490397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &1023006541499370318
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,7 +829,7 @@ GameObject:
   - component: {fileID: 6331588671775942900}
   - component: {fileID: 7850998346250876735}
   - component: {fileID: 7863189232238460333}
-  - component: {fileID: 6002920095586378460}
+  - component: {fileID: 6625027126822745469}
   m_Layer: 5
   m_Name: F5
   m_TagString: Untagged
@@ -938,8 +937,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6002920095586378460}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 6625027126822745469}
+        m_MethodName: BuyF5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -949,7 +948,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6002920095586378460
+--- !u!114 &6625027126822745469
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -958,10 +957,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1635979432835947365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &1712901286532707426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,8 +1370,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -798.02, y: 27.774048}
-  m_SizeDelta: {x: 323.9624, y: 165.80841}
+  m_AnchoredPosition: {x: -798.02, y: 28.34705}
+  m_SizeDelta: {x: 323.9648, y: 164.6633}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5554658748207191720
 CanvasRenderer:
@@ -1467,9 +1465,9 @@ GameObject:
   - component: {fileID: 6826225215141352381}
   - component: {fileID: 520013484873649255}
   - component: {fileID: 7388728635342103452}
-  - component: {fileID: 5725556243163566892}
+  - component: {fileID: 1037480351415298103}
   m_Layer: 5
-  m_Name: F3
+  m_Name: F4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1488,7 +1486,7 @@ RectTransform:
   m_Children:
   - {fileID: 7681145210890389267}
   m_Father: {fileID: 3760406807030057172}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1575,8 +1573,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5725556243163566892}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 1037480351415298103}
+        m_MethodName: BuyF4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1586,7 +1584,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5725556243163566892
+--- !u!114 &1037480351415298103
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1595,10 +1593,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3504997960246836195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &3507362599769123695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,8 +1726,8 @@ RectTransform:
   - {fileID: 380734409341605848}
   - {fileID: 1416487527120006854}
   - {fileID: 30358217152433550}
-  - {fileID: 6546409838401151968}
   - {fileID: 8192908567468744509}
+  - {fileID: 6546409838401151968}
   - {fileID: 3896451620963648978}
   - {fileID: 7086023993215195668}
   - {fileID: 1514756544134736069}
@@ -2420,7 +2417,7 @@ GameObject:
   - component: {fileID: 2342100820809428127}
   - component: {fileID: 1551292973415080599}
   - component: {fileID: 6400661359921296329}
-  - component: {fileID: 1324113703398033700}
+  - component: {fileID: 6720947768312461154}
   m_Layer: 5
   m_Name: F8
   m_TagString: Untagged
@@ -2528,8 +2525,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1324113703398033700}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 6720947768312461154}
+        m_MethodName: BuyF8
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2539,7 +2536,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1324113703398033700
+--- !u!114 &6720947768312461154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2548,10 +2545,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5838706985307493245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &6046820681974901566
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,7 +2560,7 @@ GameObject:
   - component: {fileID: 5686889657977120379}
   - component: {fileID: 2484774282634863466}
   - component: {fileID: 2170741045820381883}
-  - component: {fileID: 1763120454560173473}
+  - component: {fileID: 1892534231395829543}
   m_Layer: 5
   m_Name: F6
   m_TagString: Untagged
@@ -2672,8 +2668,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1763120454560173473}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 1892534231395829543}
+        m_MethodName: BuyF6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2683,7 +2679,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1763120454560173473
+--- !u!114 &1892534231395829543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2692,10 +2688,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6046820681974901566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &6056793410646968084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,7 +2703,7 @@ GameObject:
   - component: {fileID: 1009989627695669316}
   - component: {fileID: 5199155052981971045}
   - component: {fileID: 6818678514092566379}
-  - component: {fileID: 4475247086221458405}
+  - component: {fileID: 4346781195465942863}
   m_Layer: 5
   m_Name: F1
   m_TagString: Untagged
@@ -2816,8 +2811,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4475247086221458405}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 4346781195465942863}
+        m_MethodName: BuyF1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2827,7 +2822,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4475247086221458405
+--- !u!114 &4346781195465942863
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2836,10 +2831,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6056793410646968084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &6363014019413226739
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,8 +3020,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 343.19995, y: -219.90002}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_AnchoredPosition: {x: 343.2, y: -211.33}
+  m_SizeDelta: {x: 335.7035, y: 310.3939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7159559756383456136
 CanvasRenderer:
@@ -3056,7 +3050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77ccdb454c1d06442ae9a14e504b66c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1a1f069a92bfd664b9016ea7bd8fb606, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3078,7 +3072,7 @@ GameObject:
   - component: {fileID: 6538607901628935743}
   - component: {fileID: 7522224005983898728}
   - component: {fileID: 3564288876795913118}
-  - component: {fileID: 1194225140575114822}
+  - component: {fileID: 4466053972142671223}
   m_Layer: 5
   m_Name: F7
   m_TagString: Untagged
@@ -3186,8 +3180,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1194225140575114822}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 4466053972142671223}
+        m_MethodName: BuyF7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3197,7 +3191,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1194225140575114822
+--- !u!114 &4466053972142671223
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3206,10 +3200,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6599164927693794872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &6707598709251267753
 GameObject:
   m_ObjectHideFlags: 0
@@ -3448,7 +3441,7 @@ GameObject:
   - component: {fileID: 2504220791127955324}
   - component: {fileID: 8661618177351074722}
   - component: {fileID: 8488056719801382127}
-  - component: {fileID: 2896860863421120492}
+  - component: {fileID: 651510976007129676}
   m_Layer: 5
   m_Name: F2
   m_TagString: Untagged
@@ -3556,8 +3549,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2896860863421120492}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 651510976007129676}
+        m_MethodName: BuyF2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3567,7 +3560,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2896860863421120492
+--- !u!114 &651510976007129676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3576,10 +3569,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7367660670096102442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1bbd01e1da99a4cabb9b0ca321587c, type: 3}
+  m_Script: {fileID: 11500000, guid: ee5b64189b11aae45b0965288f6e2580, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasPrefab: {fileID: 0}
 --- !u!1 &7581896969641025511
 GameObject:
   m_ObjectHideFlags: 0
@@ -3722,7 +3714,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c40240ef66bf7f8478c8289d71137fa0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5bac7a8340f02374faf6a091731f9c62, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

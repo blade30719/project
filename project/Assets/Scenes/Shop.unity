@@ -983,7 +983,7 @@ GameObject:
   - component: {fileID: 1198908425}
   - component: {fileID: 1198908428}
   m_Layer: 5
-  m_Name: Food
+  m_Name: Catfood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1053,7 +1053,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1198908428}
-        m_MethodName: OnClickFood
+        m_MethodName: OnClickCatfood
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
