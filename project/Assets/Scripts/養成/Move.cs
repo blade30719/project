@@ -27,6 +27,14 @@ public class Move : MonoBehaviour {
         else//到了index位置,改變index值，不斷循環
         {
             index = ++index % Target.Length;
+            if (Target[index].position.x > transform.position.x)
+            {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
         }
 
         
