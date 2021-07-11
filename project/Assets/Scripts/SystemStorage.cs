@@ -39,5 +39,6 @@ public static class SystemStorage { //靜態
     public static int T8 = 0;
 
 
+    public static int Question = -1 ;
     
 }
