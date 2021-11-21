@@ -1,18 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class T2 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject Pic1;
+    private Image Image1;
     void Start()
-    {
-        
-    }
+    { 
+        Image1 = Pic1.GetComponent<Image>();
 
-    // Update is called once per frame
-    void Update()
+        if(SystemStorage.T2==0){
+            Image1.color = Color.gray;//灰
+        }else{
+            Image1.color = Color.white;//正常
+        }
+    }
+    public void ClickT2()
     {
-        
+        if((SystemStorage.T2-1)<0){
+            Debug.Log("庫存不足");
+        }else{
+            SystemStorage.T2-=1;
+            if(SystemStorage.T2==0){
+                Image1.color = Color.gray;//灰
+            }
+        }   
     }
 }
