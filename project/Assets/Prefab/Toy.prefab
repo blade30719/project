@@ -417,7 +417,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4799189503046936249}
-        m_MethodName: BuyT1
+        m_MethodName: BuyT3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -475,7 +475,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 340.19995, y: 136.09998}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_SizeDelta: {x: 190, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2594983542167529213
 CanvasRenderer:
@@ -504,7 +504,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 30c9c175400dc5e4e86bcfd4b538a09d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 10a8e439e7389134b959dd5b5db79fe7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -861,7 +861,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6002920095586378460}
-        m_MethodName: BuyT1
+        m_MethodName: BuyT5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1379,7 +1379,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5725556243163566892}
-        m_MethodName: BuyT1
+        m_MethodName: BuyT4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2019,8 +2019,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.799927, y: -219.90002}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_AnchoredPosition: {x: -40.799927, y: -211}
+  m_SizeDelta: {x: 170, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4537415592523577110
 CanvasRenderer:
@@ -2049,7 +2049,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 30c9c175400dc5e4e86bcfd4b538a09d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6aed4d58fa44b49469ac3d710fb01c61, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2332,7 +2332,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1324113703398033700}
-        m_MethodName: BuyT1
+        m_MethodName: BuyT8
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2554,7 +2554,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1763120454560173473}
-        m_MethodName: BuyT1
+        m_MethodName: BuyT6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2900,8 +2900,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 726.19995, y: 135.09998}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_AnchoredPosition: {x: 726.19995, y: 150}
+  m_SizeDelta: {x: 240, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3100422108942406596
 CanvasRenderer:
@@ -2930,7 +2930,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 30c9c175400dc5e4e86bcfd4b538a09d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b97a580d254aac64ca0d87335e936676, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3053,7 +3053,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 343.19995, y: -219.90002}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_SizeDelta: {x: 180, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7159559756383456136
 CanvasRenderer:
@@ -3082,7 +3082,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 30c9c175400dc5e4e86bcfd4b538a09d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae05be522f0c2ee4c850e4566a86207b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3213,7 +3213,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1194225140575114822}
-        m_MethodName: BuyT1
+        m_MethodName: BuyT7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3270,7 +3270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -411, y: -222}
+  m_AnchoredPosition: {x: -411, y: -211}
   m_SizeDelta: {x: 204.32886, y: 180.98773}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6218517398059335124
@@ -3300,7 +3300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 30c9c175400dc5e4e86bcfd4b538a09d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 783e737eb0f09144d9513224a6287655, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3474,7 +3474,7 @@ GameObject:
   - component: {fileID: 2504220791127955324}
   - component: {fileID: 8661618177351074722}
   - component: {fileID: 8488056719801382127}
-  - component: {fileID: 2896860863421120492}
+  - component: {fileID: 6830603245921628575}
   m_Layer: 5
   m_Name: T2
   m_TagString: Untagged
@@ -3582,8 +3582,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2896860863421120492}
-        m_MethodName: BuyT1
+      - m_Target: {fileID: 6830603245921628575}
+        m_MethodName: BuyT2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3593,7 +3593,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2896860863421120492
+--- !u!114 &6830603245921628575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3718,8 +3718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 729.19995, y: -220.90002}
-  m_SizeDelta: {x: 204.32886, y: 180.98773}
+  m_AnchoredPosition: {x: 729.19995, y: -240}
+  m_SizeDelta: {x: 250, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7039862436011208833
 CanvasRenderer:
@@ -3748,7 +3748,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 30c9c175400dc5e4e86bcfd4b538a09d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fbad465a6ad9c604183fb7436be60a9e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

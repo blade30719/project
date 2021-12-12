@@ -38,6 +38,15 @@ public static class SystemStorage { //靜態
     public static int T7 = 0;
     public static int T8 = 0;
 
+    public static int H1 = 0;
+    public static int H2 = 0;
+    public static int H3 = 0;
+    public static int H4 = 0;
+    public static int H5 = 0;
+    public static int H6 = 0;
+    public static int H7 = 0;
+    public static int H8 = 0;
+
 
     public static int Question = -1 ;
     
